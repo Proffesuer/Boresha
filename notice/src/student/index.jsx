@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+class Index extends Component {
     state = {  } 
     render() { 
         return (<div>
@@ -9,5 +9,5 @@ class Counter extends Component {
     }
 }
  
-export default Counter;
+export default Index;
 
