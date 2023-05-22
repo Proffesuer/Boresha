@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 
-class Index extends Component {
+
+class Student extends Component {
     state = {  } 
     render() { 
-        return (<div>
-           <h1> Boresha Notice Board system</h1>
-        </div>);
+        return (
+            <div>
+                <h1 class="container">
+                    Hello Guys THis is Boresha system
+                </h1>
+            </div>
+        );
     }
 }
  
-export default Index;
-
+export default Student;
