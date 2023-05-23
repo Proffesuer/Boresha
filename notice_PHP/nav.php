@@ -20,10 +20,12 @@
 </div>
 <ul class="nav-links" id="nav-links">
 
-<li><a href="">HTML & CSS</a></li>
-<li><a href="">WordPress</a></li>
-<li><a href="" >JavaScript</a></li>
-<li><a href="">JQuerry</a></li>
+<li><a href="">HOME</a></li>
+<li><a href="">NEWS</a></li>
+<li><a href="" >ARTICLES</a>
+
+</li>
+<li><a href="">JOBS</a></li>
 <li><a href="">Contact Us</a></li>
 <li><button class="login-button">Signin</button></li>
 </ul>
