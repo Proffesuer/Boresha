@@ -1,4 +1,4 @@
-<?php include 'Home.php';?>
+<?php include 'nav.php';?>
 
 
 <html lang="en">
@@ -9,6 +9,7 @@
     <title>Skuli</title>
 </head>
 <body>
+    
     
 </body>
 </html>
