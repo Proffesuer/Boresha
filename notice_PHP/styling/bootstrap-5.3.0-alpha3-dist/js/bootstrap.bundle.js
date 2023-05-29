@@ -3039,7 +3039,7 @@
       placement: state.placement
     })) : tetherOffset;
     var normalizedTetherOffsetValue = typeof tetherOffsetValue === 'number' ? {
-      mainAxis: tetherOffsetValue,
+      mainAxis: tetffsetValue,
       altAxis: tetherOffsetValue
     } : Object.assign({
       mainAxis: 0,

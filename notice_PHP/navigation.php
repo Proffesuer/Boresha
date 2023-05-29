@@ -12,11 +12,12 @@
 
 <link rel="stylesheet" href="nav/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="nav/css/style.css">
+<link rel="stylesheet" href="nav/css/styles.css">
 <title>Skuli</title>
 <script nonce="ce8312cb-1415-4448-bef7-3137d2885eea">(function(w,d){!function(a,b,c,d){a[c]=a[c]||{};a[c].executed=[];a.zaraz={deferred:[],listeners:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var f=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:f})}};for(const g of["track","set","debug"])a.zaraz[g]=a.zaraz._f(g);a.zaraz.init=()=>{var h=b.getElementsByTagName(d)[0],i=b.createElement(d),j=b.getElementsByTagName("title")[0];j&&(a[c].t=b.getElementsByTagName("title")[0].text);a[c].x=Math.random();a[c].w=a.screen.width;a[c].h=a.screen.height;a[c].j=a.innerHeight;a[c].e=a.innerWidth;a[c].l=a.location.href;a[c].r=b.referrer;a[c].k=a.screen.colorDepth;a[c].n=b.characterSet;a[c].o=(new Date).getTimezoneOffset();if(a.dataLayer)for(const n of Object.entries(Object.entries(dataLayer).reduce(((o,p)=>({...o[1],...p[1]})),{})))zaraz.set(n[0],n[1],{scope:"page"});a[c].q=[];for(;a.zaraz.q.length;){const q=a.zaraz.q.shift();a[c].q.push(q)}i.defer=!0;for(const r of[localStorage,sessionStorage])Object.keys(r||{}).filter((t=>t.startsWith("_zaraz_"))).forEach((s=>{try{a[c]["z_"+s.slice(7)]=JSON.parse(r.getItem(s))}catch{a[c]["z_"+s.slice(7)]=r.getItem(s)}}));i.referrerPolicy="origin";i.src="../../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a[c])));h.parentNode.insertBefore(i,h)};["complete","interactive"].includes(b.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
-<div class="site-mobile-menu">
+
+<div class="site-mobile-menu" style="background-color:smoke;">
 <div class="site-mobile-menu-header">
 <div class="site-mobile-menu-close mt-3">
 <span class="icon-close2 js-menu-toggle"></span>
@@ -26,9 +27,10 @@
 </div>
 <header class="site-navbar" role="banner">
 <div class="container">
+
 <div class="row align-items-center">
 <div class="col-11 col-xl-2">
-<h1 class="mb-0 site-logo"><a href="index-2.html" class="text-white mb-0">Brand</a></h1>
+<h1 ><a href="index.php" class="text-white mb-0"><b>SKULI</b></a></h1>
 </div>
 <div class="col-12 col-md-10 d-none d-xl-block">
 <nav class="site-navigation position-relative text-right" role="navigation">
@@ -63,7 +65,12 @@
 </div>
 </div>
 </header>
-<div class="hero" style="background-image: url('images/hero_1.jpg');"></div>
+<div class="hero" style="background-color:#053742; height:10%">
+
+
+
+
+</div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
