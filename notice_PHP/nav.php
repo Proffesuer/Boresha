@@ -31,7 +31,7 @@
 <h1 class="mb-0 site-logo "><a href="index.html"><b>VARSITY</b><span class="text-primary"></span> </a></h1>
 </div>
 <div class="col-12 col-md-10 d-none d-xl-block">
-<nav class="site-navigation position-relative text-right" role="navigation">
+<nav class="site-navigation position-relative text-right" role="navigation"style="background:#053742;border-radius:20px;">
 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
 <li><a href="" class="nav-link">Home</a></li>
 <li class="has-children">
@@ -56,11 +56,12 @@
 <li><a href="#contact-section" class="nav-link">Contact</a></li>
 <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
 <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
-<li class="social" style="color:#fff;"><a href="#contact-section" class="nav-link"><b>log</b><span class="icon-linkedin"></span></a></li>
+<li class="social" style="color:#fff;"><a href="<?php echo 'login.php';?>" class="nav-link"><b>log</b><span class="icon-linkedin"></span></a></li>
 </ul>
 </nav>
 </div>
-<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3">
+ </span></a></div>
 </div>
 </div>
 </header>
