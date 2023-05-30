@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="styling/css/style.css">
-    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/webfonts/fa-brands-400.woff2">
-    <link rel="stylesheet" href="assets/fontawesome-free-6.4.0-web/css/all.css">
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel>
 </head>
 <body>
@@ -15,11 +15,17 @@
 
 <div class="footer">
  
+<span class="icon-facebook"></span>
+
+<span class="icon-twtter"></span>
+<span class="icon-twitter"></span>
+<span class="icon-linkedin"></span>
 
 
 
+</span>
 
-<h1>Hello guys this is my footer </h1>
+</h1>
 
 </div>
 
