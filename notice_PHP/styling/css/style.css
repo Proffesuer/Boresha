@@ -7,9 +7,20 @@ color: #fff;
 
 }
 /*this is my footer*/
+
 .footer{
-background-color: #111827;
-color: #fff;
+
+
+    position: absolute;
+width: 100%;
+top: 1553px;
+
+
+background:#1c4a59;
+
+
+
+
 
 
 }
