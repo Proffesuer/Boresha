@@ -2,18 +2,22 @@
 <html>
 <head>
  <meta charset="utf-8">
-      <title>Login and signup form</title>
-      <link rel="stylesheet" href="style.css">
+      <title>Login or signup</title>
+      <link rel="stylesheet" href="styling/style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet"href="style.css">
+     
 </head>
 <body>
+   
  <div class="wrapper">
          <div class="title-text">
+            <lable class="link"><a href="./">VARSITY</a></lable>
             <div class="title login">
-               Login Form
+               Login 
             </div>
+            
             <div class="title signup">
+          
                Signup 
             </div>
          </div>
