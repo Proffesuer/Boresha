@@ -1,7 +1,6 @@
 
 <?php include 'nav.php';?>
 
-<?php include 'Home.php';?>
 
 
 

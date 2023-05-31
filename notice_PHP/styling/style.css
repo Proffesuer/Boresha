@@ -11,11 +11,11 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background-image: url('assets/post-it-notes-gc7bac7122_1920.jpg');
+  background-image: url('../assets/post-it-notes-gc7bac7122_1920.jpg');
   background-size: cover;
 }
 ::selection{
-  background-image: url("assets/post-it-notes-gc7bac7122_1920.jpg");
+  background-image: url("../assets/post-it-notes-gc7bac7122_1920.jpg");
   background-size: cover;
 }
 .wrapper{
@@ -181,4 +181,13 @@ form .btn input[type="submit"]{
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.link a{
+  text-decoration:none;
+  color:tomato;
+  font-weight: bolder;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
