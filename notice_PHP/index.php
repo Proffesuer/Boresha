@@ -3,7 +3,4 @@
 
 
 
-
-
-
 <?php include 'footer.php';?>
