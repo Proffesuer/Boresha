@@ -89,12 +89,5 @@
 <hr >
 </div>
 
-<div class="comment">
-
-
-<a href="Admin/" ><h1 class="">hello world this is the magic</h1></a>
-</div>
-
-
 </body>
 </html>
