@@ -1,4 +1,3 @@
-
 <html>
 <head>
  <meta charset="utf-8">
@@ -30,7 +29,7 @@
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-               <form action="#" class="login">
+               <form action="Admin/" class="login">
                   <div class="field">
                      <input type="text" placeholder="Email Address" required>
                   </div>
@@ -42,7 +41,7 @@
                   </div>
                   <div class="field btn">
                      <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
+                     <input type="submit" value="Login"><
                   </div>
                   <div class="signup-link">
                      NOT REGISTERED? <a href="">Signup now</a>
