@@ -739,7 +739,7 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="../Dash_style/vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="../Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
