@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="styling/css/footer.css">
+    <link rel="stylesheet" href="footer.css">
     
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet"href="styling/css/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
@@ -22,16 +22,16 @@
 <div class="row">
 
 <div class="col-md-4">
-<img src="assets/cuea.png" width="30%">
+<img src="assets/cuea.png" width="30%"> CUEA
 </div>
 
 <div class="col-md-4">
-<img src="assets/BSS-01.jpg" width="30%"style="border-radius:10px;margin-top:10px;">
+<img src="assets/BSS-01.jpg" width="30%"style="border-radius:10px;margin-top:10px;"> Bennavi Sofsolution
 
 </div>
 <div class="col-md-4" style="margin-top:15px;">
 
-<img src="assets/ictalogo.png" width="30%"">
+<img src="assets/ictalogo.png" width="30%""> ICT Authority
 </div>
 
 

@@ -2,7 +2,7 @@
 /*Home page*/
 .page{
 
-background-color: #111829;
+
 color: #fff;
 margin: 20px;
 
@@ -13,9 +13,9 @@ margin: 20px;
   padding-left: 30px;
   position: absolute;
 width: 100%;
-top: 1280px;
+top: 750px;
 height: 350px;
-background-color: #111827;
+background-color: #022030;
 color: #fff;
 
 }
@@ -27,9 +27,9 @@ p{
 padding-left: 30px;
     position: absolute;
 width: 100%;
-top: 1553px;
+top: 1100px;
 
-background:#000;
+background:#111827;
 color: #fff;
 
 
