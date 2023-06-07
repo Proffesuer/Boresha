@@ -1,3 +1,5 @@
+<?php require "Database/config.php";?>
+<?php require "Database/login_validate.php"?>
 <html>
 <head>
  <meta charset="utf-8">

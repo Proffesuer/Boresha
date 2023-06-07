@@ -1,12 +1,13 @@
 <?php
 
-
+//database intitialization
 $servername ="localhost";
 $username ="root";
 $pass ="";
+$Dname ="notice";
 
 //connection to the database 
-$conn = new mysqli($servername ,$username, $pass);
+$conn = new mysqli($servername ,$username, $pass,$Dname);
 
 //check connection
 if($conn->connect_error){
