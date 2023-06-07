@@ -14,7 +14,7 @@
 <br>
 <div class="container" >
 <div class="header "style="color:#fff;">
-    <h style="background-color:tomato;padding-left:5px;padding-top:5px;padding-bottom:5px;padding-right:5px;border-radius:20px;"><b>Smart Notice Features:</b></h>
+    <h style="background-color:tomato;padding-left:5px;padding-top:5px;padding-bottom:5px;padding-right:5px;border-radius:20px;"><b>Boresha's New Features:</b></h>
   </div>
  
 </div>
