@@ -80,7 +80,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Register Smart Notice</title>
+    <title>Smart Notice -Register</title>
   </head>
   <body style="background-image:url('./images/backr.png');background-repeat: no-repeat;background-size: cover;">
   <div class="container"style="background-color:black; opacity: 0.8;" >

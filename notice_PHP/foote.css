@@ -13,9 +13,9 @@ margin: 20px;
   padding-left: 30px;
   position: absolute;
 width: 100%;
-top: 750px;
+top: 620px;
 height: 350px;
-background-color: #022030;
+background-color: #111827;
 color: #fff;
 
 }
@@ -27,7 +27,7 @@ p{
 padding-left: 30px;
     position: absolute;
 width: 100%;
-top: 1100px;
+top: 950px;
 
 background:#111827;
 color: #fff;
@@ -97,4 +97,7 @@ background-color: #fff;
   }
 .line{
   background-color: tomato;
+}
+.lin{
+  background-color: #fff;
 }

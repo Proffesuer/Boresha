@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="foote.css">
     
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet"href="styling/css/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
@@ -31,10 +31,8 @@
 </div>
 <div class="col-md-4" style="margin-top:15px;">
 
-<img src="assets/ictalogo.png" width="30%""> ICT Authority
+<img src="assets/ictalogo.png" width="30%"> ICT Authority
 </div>
-
-
 
 
 
@@ -54,6 +52,11 @@
 
 
 <div class="footer">
+
+<div class="lin">
+    <hr>
+</div>
+
 <div class="container">
     <div class="row">
     <div class="col-md-3">

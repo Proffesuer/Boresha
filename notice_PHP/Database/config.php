@@ -1,21 +1,11 @@
-<?php
-
-//database intitialization
-$servername ="localhost";
-$username ="root";
-$pass ="";
-$Dname ="notice";
-
-//connection to the database 
-$conn = new mysqli($servername ,$username, $pass,$Dname);
-
-//check connection
-if($conn->connect_error){
-
-die ("Connection to Notice Database Failled!!" .$conn->connect_error);
-
-}
-echo "Connection Is successfull";
-
-
-?>
+<?php      
+        $host = "localhost";  
+        $user = "root";  
+        $password = '';  
+        $db_name = "notice";  
+          
+        $db_con = mysqli_connect($host, $user, $password, $db_name);  
+        if(mysqli_connect_errno()) {  
+            die("Failed to connect with MySQL: ". mysqli_connect_error());  
+        }  
+    ?>  

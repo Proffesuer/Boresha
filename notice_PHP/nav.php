@@ -56,7 +56,7 @@
 <li><a href="#contact-section" class="nav-link">Contact</a></li>
 <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
 <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
-<li class="social" style="color:#fff;"><a href="<?php echo'login.php'?>" class="nav-link"><b>log</b><span class="icon-linkedin"></span></a></li>
+<li class="social" style="color:#fff;"><a href="<?php echo'Students/'?>" class="nav-link"><b>log</b><span class="icon-linkedin"></span></a></li>
 </ul>
 </nav>
 </div>
@@ -80,7 +80,5 @@
 <script src="js/jquery.sticky.js"></script>
 <script src="js/main.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7ced7c1bdf219d04","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
-</body>
 
-<!-- Mirrored from preview.colorlib.com/theme/bootstrap/website-menu-01/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 08:49:48 GMT -->
 </html>
