@@ -69,11 +69,300 @@ exit();
 		<meta name="author" content="">
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
-		<link rel="stylesheet" href="../styling/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+	
 		
 	    <title>Notice Portal | Signi-in | Signup</title>
 
-	
+		<style>*,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+            background: #3b4465;
+        }
+        
+        .forms-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .section-title {
+            font-size: 32px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        
+        .forms {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+        
+        .form-wrapper {
+            animation: hideLayer .3s ease-out forwards;
+        }
+        
+        .form-wrapper.is-active {
+            animation: showLayer .3s ease-in forwards;
+        }
+        
+        @keyframes showLayer {
+            50% {
+                z-index: 1;
+            }
+            100% {
+                z-index: 1;
+            }
+        }
+        
+        @keyframes hideLayer {
+            0% {
+                z-index: 1;
+            }
+            49.999% {
+                z-index: 1;
+            }
+        }
+        
+        .switcher {
+            position: relative;
+            cursor: pointer;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0;
+            text-transform: uppercase;
+            font-family: inherit;
+            font-size: 16px;
+            letter-spacing: .5px;
+            color: #fff;
+            background-color: #053742;
+			font-weight:bolder;
+			border-radius:10px;
+			padding-left:10px;
+			padding-right:10px;
+            border: none;
+            outline: none;
+            transform: translateX(0);
+            transition: all .3s ease-out;
+        }
+        
+        .form-wrapper.is-active .switcher-login {
+            color: #fff;
+            transform: translateX(90px);
+        }
+        
+        .form-wrapper.is-active .switcher-signup {
+            color: #fff;
+            transform: translateX(-90px);
+        }
+        
+        .underline {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            overflow: hidden;
+            pointer-events: none;
+            width: 100%;
+            height: 2px;
+        }
+        
+        .underline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: inherit;
+            display: block;
+            width: inherit;
+            height: inherit;
+            background-color: currentColor;
+            transition: transform .2s ease-out;
+        }
+        
+        .switcher-login .underline::before {
+            transform: translateX(101%);
+        }
+        
+        .switcher-signup .underline::before {
+            transform: translateX(-101%);
+        }
+        
+        .form-wrapper.is-active .underline::before {
+            transform: translateX(0);
+        }
+        
+        .form {
+            overflow: hidden;
+            min-width: 260px;
+            margin-top: 50px;
+            padding: 30px 25px;
+          border-radius: 5px;
+            transform-origin: top;
+        }
+        
+        .form-login {
+            animation: hideLogin .3s ease-out forwards;
+        }
+        
+        .form-wrapper.is-active .form-login {
+            animation: showLogin .3s ease-in forwards;
+        }
+        
+        @keyframes showLogin {
+            0% {
+                background: #d7e7f1;
+                transform: translate(40%, 10px);
+            }
+            50% {
+                transform: translate(0, 0);
+            }
+            100% {
+                background-color: #fff;
+                transform: translate(35%, -20px);
+            }
+        }
+        
+        @keyframes hideLogin {
+            0% {
+                background-color: #fff;
+                transform: translate(35%, -20px);
+            }
+            50% {
+                transform: translate(0, 0);
+            }
+            100% {
+                background: #023020;
+                transform: translate(40%, 10px);
+            }
+        }
+        
+        .form-signup {
+            animation: hideSignup .3s ease-out forwards;
+        }
+        
+        .form-wrapper.is-active .form-signup {
+            animation: showSignup .3s ease-in forwards;
+        }
+        
+        @keyframes showSignup {
+            0% {
+                background: #023020;
+                transform: translate(-40%, 10px) scaleY(.8);
+            }
+            50% {
+                transform: translate(0, 0) scaleY(.8);
+            }
+            100% {
+                background-color: #fff;
+                transform: translate(-35%, -20px) scaleY(1);
+            }
+        }
+        
+        @keyframes hideSignup {
+            0% {
+                background-color: #fff;
+                transform: translate(-35%, -20px) scaleY(1);
+            }
+            50% {
+                transform: translate(0, 0) scaleY(.8);
+            }
+            100% {
+                background: #023020;
+                transform: translate(-40%, 10px) scaleY(.8);
+            }
+        }
+        
+        .form fieldset {
+            position: relative;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: all .3s ease-out;
+        }
+        
+        .form-login fieldset {
+            transform: translateX(-50%);
+        }
+        
+        .form-signup fieldset {
+            transform: translateX(50%);
+        }
+        
+        .form-wrapper.is-active fieldset {
+            opacity: 1;
+            transform: translateX(0);
+            transition: opacity .4s ease-in, transform .35s ease-in;
+        }
+        
+        .form legend {
+            position: absolute;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            clip: rect(0 0 0 0);
+        }
+        
+        .input-block {
+            margin-bottom: 20px;
+        }
+        
+        .input-block label {
+            font-size: 14px;
+          color: #a1b4b4;
+        }
+        
+        .input-block input {
+            display: block;
+            width: 100%;
+            margin-top: 8px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            line-height: 40px;
+            color: #3b4465;
+          background: #eef9fe;
+          border: 1px solid #cddbef;
+          border-radius: 2px;
+        }
+        
+        .form [type='submit'] {
+            opacity: 0;
+            display: block;
+            min-width: 120px;
+            margin: 30px auto 10px;
+            font-size: 18px;
+            line-height: 40px;
+            border-radius: 25px;
+            border: none;
+            transition: all .3s ease-out;
+        }
+        
+        .form-wrapper.is-active .form [type='submit'] {
+            opacity: 1;
+            transform: translateX(0);
+            transition: all .4s ease-in;
+        }
+        
+        .btn-login {
+            color: #fbfdff;
+            background: #111827;
+            transform: translateX(-30%);
+        }
+        
+        .btn-signup {
+            color: #a7e245;
+            background: #053742;
+            box-shadow: inset 0 0 0 2px #a7e245;
+            transform: translateX(30%);
+        }
+        </style>
 		
 
      
@@ -108,111 +397,104 @@ error:function (){}
 
 
 	</head>
-    <body style="background-image:url('../assets/post-it-notes-gc7bac7122_1920.jpg');backdrop-filter: blur(3px);">
+    <body style="background-image:url('../assets/post-it-notes-gc7bac7122_1920.jpg');backdrop-filter: blur(1px);">
 	
 
-
-
-<!-- ============================================== HEADER : END ============================================== -->
-<div class="breadcrumb"style="background-color:
-#053742 ;color:#fff">
-	<div class="container">
-		<div class="breadcrumb-inner">
-			<ul class="list-inline list-unstyled">
-				<li style="text-decoration:none;font-weight:bolder;"><a href="../">Home</a></li>
-				<li class='active'style="font-weight:bold;">Boresha Notice Board </li>
-			</ul>
-		</div>
-	</div>
-</div>
-
-<div class="body-content outer-top-bd" >
-	<div class="container">
-		<div class="sign-in-page inner-bottom-sm">
-			<div class="row">
-				<!-- Sign-in -->			
-<div class="col-md-5 col-sm-5 sign-in" style="color:#fff;border-radius:20px;background-color:#000;background-color: rgba(0, 0, 0, 0.7);">
-	<h4 style="background-color:
-#053742 ;border-radius:10px;"><center>sign In</center></h4>
+    <section class="forms-section">
+        
+	<h1 class="section-title" style=""><a href="../" style="text-decoration:none; color:green;">Boresha</a>||Login||Signup</h1>
 	
-	<form class="register-form outer-top-xs" method="post">
-	<span style="color:red;" >
-<?php
-echo htmlentities($_SESSION['errmsg']);
-?>
-<?php
-echo htmlentities($_SESSION['errmsg']="");
-?>
-	</span>
-		<div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Email Address</label>
-		    <input type="email" name="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
-		</div>
-	  	<div class="form-group">
-		    <label class="info-title" for="exampleInputPassword1">Password </label>
-		 <input type="password" name="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" >
-		</div>
-		<div class="radio outer-xs">
-		  	<a href="forgot-password.php" class="forgot-password pull-right">Forgot your Password?</a>
-		</div>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button" name="login">Login</button>
-	</form>					
-</div>
-<!-- Sign-in -->
-<div class="col-md-1 col-sm-1">
-<br><br>
-<h1 style="color:#fff;">
-	Or
-</h1>
-</div>
-
-<!-- create a new account -->
-<div class="col-md-6 col-sm-6 create-new-account "style="color:#fff;border-radius:20px;background-color:#000;background-color: rgba(0, 0, 0, 0.7);">
-<h4 style="background-color:
-#053742 ;border-radius:10px;"><center>Create Account With Boresha</center></h4>
-	
-	<form class="register-form outer-top-xs" role="form" method="post" name="register" onSubmit="return valid();">
-<div class="form-group">
-	    	<label class="info-title" for="fullname">Full Name</label>
-	    	<input type="text" class="form-control unicase-form-control text-input" id="fullname" name="fullname" required="required">
-	  	</div>
-
-
-		<div class="form-group">
-	    	<label class="info-title" for="exampleInputEmail2">Email Address</label>
-	    	<input type="email" class="form-control unicase-form-control text-input" id="email" onBlur="userAvailability()" name="emailid" required >
-	    	       <span id="user-availability-status1" style="font-size:12px;"></span>
-	  	</div>
-
-<div class="form-group">
-	    	<label class="info-title" for="contactno">Contact No.</label>
-	    	<input type="text" class="form-control unicase-form-control text-input" id="contactno" name="contactno" maxlength="10" required >
-	  	</div>
-
-<div class="form-group">
-	    	<label class="info-title" for="password">Password.</label>
-	    	<input type="password" class="form-control unicase-form-control text-input" id="password" name="password"  required >
-	  	</div>
-
-<div class="form-group">
-	    	<label class="info-title" for="confirmpassword">Confirm Password.</label>
-	    	<input type="password" class="form-control unicase-form-control text-input" id="confirmpassword" name="confirmpassword" required >
-	  	</div>
-
-
-	  	<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button" id="submit">Sign Up</button>
-	</form>
-	<span class="checkout-subtitle outer-top-xs">"Everyday Everywhere" </span>
-	<div class="checkbox">
-	  	
-	</div>
-</div>	
-<!-- create a new account -->			</div><!-- /.row -->
-		</div>
-
-</div>
-</div>
+	<div class="forms">
+			
+          <div class="form-wrapper is-active">
+		  
+            <button type="button" class="switcher switcher-login">
+              Login
+              <span class="underline"></span>
+            </button>
+            <form class="form form-login"method="post">
+			<span style="color:red;" >
+                <?php
+                echo htmlentities($_SESSION['errmsg']);
+                ?>
+                <?php
+                echo htmlentities($_SESSION['errmsg']="");
+                ?>
+                    </span>
+              <fieldset>
+                <legend >Please, enter your email and password for login.</legend>
+                <div class="input-block">
+                  <label for="login-email">E-mail</label>
+                  <input id="login-email" type="email" placeholder="Enter email" name="email"required>
+                </div>
+                <div class="input-block">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" type="password"placeholder="Enter Password" name="password"required>
+                </div>
+              </fieldset>
+              <button type="submit" name="login" class="btn-login">Login</button>
+            </form>
+          </div>
+          <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+              Sign Up
+              <span class="underline"></span>
+            </button>
+            <form class="form form-signup"role="form" method="post" name="register" onSubmit="return valid();">
+              <fieldset>
+                <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                <div class="input-block">
+                  <label for="signup-username">Full Names</label>
+                  <input id="signup-email" placeholder="Enter full names"type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-email">E-mail</label>
+                  <input id="signup-email" type="email" placeholder="Enter email" onBlur="userAvailability()" name="emailid"required>
+                </div>
+                <div class="input-block">
+                    <label for="signup-email">Contact No</label>
+                    <input type="email" id="contactno" placeholder="Enter contact" name="contactno" maxlength="10"required>
+                  </div>
+                  
+                <div class="input-block">
+                  <label for="signup-password">Password</label>
+                  <input id="signup-password" type="password" placeholder="Enter password"name="password" required>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn-signup" id="submit" name="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
 
+<script>
+    const switchers = [...document.querySelectorAll('.switcher')]
+
+switchers.forEach(item => {
+	item.addEventListener('click', function() {
+		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+		this.parentElement.classList.add('is-active')
+	})
+})
+
+    </script>
+
+
+    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

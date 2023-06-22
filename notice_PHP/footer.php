@@ -29,10 +29,7 @@
 <img src="assets/BSS-01.jpg" width="30%"style="border-radius:10px;margin-top:10px;"> Bennavi Sofsolution
 
 </div>
-<div class="col-md-4" style="margin-top:15px;">
 
-<img src="assets/ictalogo.png" width="30%"> ICT Authority
-</div>
 
 
 
@@ -60,7 +57,7 @@
 <div class="container">
     <div class="row">
     <div class="col-md-3">
-    <ul class="dropdown">
+    <ul class="dropdown" s">
     <div class="line">
             <hr>
         </div>
