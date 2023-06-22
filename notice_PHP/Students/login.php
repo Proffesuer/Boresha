@@ -1,6 +1,10 @@
 <?php
 session_start();
 error_reporting(0);
+session_start();
+
+
+
 include('config.php');
 // Code user Registration
 if(isset($_POST['submit']))
@@ -453,7 +457,7 @@ error:function (){}
                 </div>
                 <div class="input-block">
                     <label for="signup-email">Contact No</label>
-                    <input type="email" id="contactno" placeholder="Enter contact" name="contactno" maxlength="10"required>
+                    <input type="number" id="contactno" placeholder="Enter contact" name="contactno" maxlength="10"required>
                   </div>
                   
                 <div class="input-block">
