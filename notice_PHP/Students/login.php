@@ -1,19 +1,16 @@
 <?php
 session_start();
 error_reporting(0);
-session_start();
-
-
-
 include('config.php');
 // Code user Registration
 if(isset($_POST['submit']))
 {
 $name=$_POST['fullname'];
-$email=$_POST['emailid'];
+$email=$_POST['email'];
 $contactno=$_POST['contactno'];
 $password=md5($_POST['password']);
-$query=mysqli_query($con,"insert into users(name,email,contactno,password) values('$name','$email','$contactno','$password')");
+$role=$_POST['role'];
+$query=mysqli_query($con,"insert into users(name,email,contactno,password,role) values('$name','$email','$contactno','$password','$role')");
 if($query)
 {
 	echo "<script>alert('You are successfully register');</script>";
@@ -31,16 +28,44 @@ $query=mysqli_query($con,"SELECT * FROM users WHERE email='$email' and password=
 $num=mysqli_fetch_array($query);
 if($num>0)
 {
-$extra="Home.php";
+
 $_SESSION['login']=$_POST['email'];
 $_SESSION['id']=$num['id'];
 $_SESSION['username']=$num['name'];
 $uip=$_SERVER['REMOTE_ADDR'];
+$_SESSION['role']=$num['role'];
 $status=1;
 $log=mysqli_query($con,"insert into userlog(userEmail,userip,status) values('".$_SESSION['login']."','$uip','$status')");
-$host=$_SERVER['HTTP_HOST'];
-$uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:http://$host$uri/$extra");
+if($_SESSION['role'] == "student")
+{
+    header("location:student.php");
+ 
+}
+else
+if($_SESSION['role'] == "admin")
+{
+    header("location:admin.php");
+ 
+}
+else
+if($_SESSION['role'] == "teacher")
+{
+    header("location:teacher.php");
+ 
+}
+else
+if($_SESSION['role'] == "organization")
+{
+    header("location:organization.php");
+ 
+}
+else{
+
+    header("location:error.php");
+}
+
+
+
 exit();
 }
 else
@@ -60,6 +85,82 @@ exit();
 
 
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
+	    <meta name="robots" content="all">
+
+	    <title>Shopping Portal | Signi-in | Signup</title>
+
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	    
+	    <!-- Customizable CSS -->
+	    <link rel="stylesheet" href="assets/css/main.css">
+	    <link rel="stylesheet" href="assets/css/green.css">
+	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/css/owl.transitions.css">
+		<!--<link rel="stylesheet" href="assets/css/owl.theme.css">-->
+		<link href="assets/css/lightbox.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/animate.min.css">
+		<link rel="stylesheet" href="assets/css/rateit.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+
+		<!-- Demo Purpose Only. Should be removed in production -->
+		<link rel="stylesheet" href="assets/css/config.css">
+
+		<link href="assets/css/green.css" rel="alternate stylesheet" title="Green color">
+		<link href="assets/css/blue.css" rel="alternate stylesheet" title="Blue color">
+		<link href="assets/css/red.css" rel="alternate stylesheet" title="Red color">
+		<link href="assets/css/orange.css" rel="alternate stylesheet" title="Orange color">
+		<link href="assets/css/dark-green.css" rel="alternate stylesheet" title="Darkgreen color">
+		<!-- Demo Purpose Only. Should be removed in production : END -->
+
+		
+		<!-- Icons/Glyphs -->
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!-- Fonts --> 
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico">
+<script type="text/javascript">
+function valid()
+{
+ if(document.register.password.value!= document.register.confirmpassword.value)
+{
+alert("Password and Confirm Password Field do not match  !!");
+document.register.confirmpassword.focus();
+return false;
+}
+return true;
+}
+</script>
+    	<script>
+function userAvailability() {
+$("#loaderIcon").show();
+jQuery.ajax({
+url: "check_availability.php",
+data:'email='+$("#email").val(),
+type: "POST",
+success:function(data){
+$("#user-availability-status1").html(data);
+$("#loaderIcon").hide();
+},
+error:function (){}
+});
+}
+</script>
 
 
 <!DOCTYPE html>
@@ -453,7 +554,7 @@ error:function (){}
                 </div>
                 <div class="input-block">
                   <label for="signup-email">E-mail</label>
-                  <input id="signup-email" type="email" placeholder="Enter email" onBlur="userAvailability()" name="emailid"required>
+                  <input id="signup-email" type="email" placeholder="Enter email" onBlur="userAvailability()" name="email"required>
                 </div>
                 <div class="input-block">
                     <label for="signup-email">Contact No</label>
@@ -464,6 +565,10 @@ error:function (){}
                   <label for="signup-password">Password</label>
                   <input id="signup-password" type="password" placeholder="Enter password"name="password" required>
                 </div>
+                <div class="input-block">
+                   
+                    <input type="hidden" id="role" name="role" value="user">
+                  </div>
               </fieldset>
               <button type="submit" class="btn-signup" id="submit" name="submit">Sign Up</button>
             </form>
@@ -488,17 +593,3 @@ switchers.forEach(item => {
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

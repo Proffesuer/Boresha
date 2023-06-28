@@ -1,3 +1,4 @@
+
 <?php include 'nav.php';?>
 <?php session_start(); ?>
 
@@ -34,7 +35,7 @@
         <ul  style="background-color:#053742"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Home.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-home"></i>
                 </div>
@@ -46,7 +47,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active" >
-                <a class="nav-link" href="./">
+                <a class="nav-link" href="Home.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -69,7 +70,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Timetable</a>
+                        <a class="collapse-item" href="buttons.php">Timetable</a>
                         <a class="collapse-item" href="cards.html">Internal Memos</a>
                     </div>
                 </div>
@@ -377,6 +378,7 @@
 
 
 Welcome Back-<?php echo htmlentities($_SESSION['username']);?>
+Welcome Back-<?php echo htmlentities($_SESSION['role']);?>
 
 </h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
