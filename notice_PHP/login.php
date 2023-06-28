@@ -38,7 +38,9 @@ $status=1;
 $log=mysqli_query($con,"insert into userlog(userEmail,userip,status) values('".$_SESSION['login']."','$uip','$status')");
 if($_SESSION['role'] == "student")
 {
+    $_SESSION['username']=$num['name'];
     header("location:student.php");
+
  
 }
 else
@@ -502,7 +504,7 @@ error:function (){}
 
 
 	</head>
-    <body style="background-image:url('../assets/post-it-notes-gc7bac7122_1920.jpg');backdrop-filter: blur(1px);">
+    <body style="background-image:url('assets/post-it-notes-gc7bac7122_1920.jpg');backdrop-filter: blur(1px);">
 	
 
     <section class="forms-section">
@@ -567,7 +569,7 @@ error:function (){}
                 </div>
                 <div class="input-block">
                    
-                    <input type="hidden" id="role" name="role" value="user">
+                    <input type="hidden" id="role" name="role" value="student">
                   </div>
               </fieldset>
               <button type="submit" class="btn-signup" id="submit" name="submit">Sign Up</button>
