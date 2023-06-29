@@ -7,7 +7,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-home"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Boresha Admin</div>
+                <div class="sidebar-brand-text mx-3">Boresha Student</div>
             </a>
 
             <!-- Divider -->
@@ -99,20 +99,7 @@
                     <i class="fas fa-fw fa-bed"></i>
                     <span>Hostels</span></a>
             </li>
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Manage Users</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Manage Admin</span></a>
-            </li>
-
-          
-
+         
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
