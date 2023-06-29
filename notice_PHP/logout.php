@@ -9,5 +9,5 @@ session_unset();
 $_SESSION['errmsg']="You have successfully logout";
 ?>
 <script language="javascript">
-document.location="./";
+document.location="login.php";
 </script>

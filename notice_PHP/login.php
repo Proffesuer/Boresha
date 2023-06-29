@@ -5,7 +5,7 @@ include('config.php');
 // Code user Registration
 if(isset($_POST['submit']))
 {
-$name=$_POST['fullname'];
+$name=$_POST['name'];
 $email=$_POST['email'];
 $contactno=$_POST['contactno'];
 $password=md5($_POST['password']);
@@ -26,19 +26,24 @@ if(isset($_POST['login']))
    $password=md5($_POST['password']);
 $query=mysqli_query($con,"SELECT * FROM users WHERE email='$email' and password='$password'");
 $num=mysqli_fetch_array($query);
+
+
 if($num>0)
 {
-
+    
 $_SESSION['login']=$_POST['email'];
 $_SESSION['id']=$num['id'];
-$_SESSION['username']=$num['name'];
+$_SESSION['email']=$num['email'];
 $uip=$_SERVER['REMOTE_ADDR'];
-$_SESSION['role']=$num['role'];
+
 $status=1;
 $log=mysqli_query($con,"insert into userlog(userEmail,userip,status) values('".$_SESSION['login']."','$uip','$status')");
+$_SESSION['role']=$num['role'];
+
 if($_SESSION['role'] == "student")
 {
-    $_SESSION['username']=$num['name'];
+
+   
     header("location:student.php");
 
  
@@ -46,6 +51,7 @@ if($_SESSION['role'] == "student")
 else
 if($_SESSION['role'] == "admin")
 {
+    $_SESSION['email']=$num['email'];
     header("location:admin.php");
  
 }
@@ -552,7 +558,7 @@ error:function (){}
                 <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                 <div class="input-block">
                   <label for="signup-username">Full Names</label>
-                  <input id="signup-email" placeholder="Enter full names"type="text" id="fullname" name="fullname" required>
+                  <input id="signup-email" placeholder="Enter full names"type="text" id="fullname" name="name" required>
                 </div>
                 <div class="input-block">
                   <label for="signup-email">E-mail</label>
