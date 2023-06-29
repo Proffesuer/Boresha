@@ -530,8 +530,13 @@ error:function (){}
                   <input id="signup-password" type="password" placeholder="Enter password"name="password" required>
                 </div>
                 <div class="input-block">
-                   
-                    <input type="hidden" id="role" name="role" value="student">
+                <label for="signup-password">Type:</label>
+                    <select type="text" id="role" name="role" required>
+                        <option name="role" value="student">student</option>
+                        <option name="role" value="teacher">teacher</option>
+                        <option  name="role"value="organization">Organization</option>
+                        
+</select>
                   </div>
               </fieldset>
               <button type="submit" class="btn-signup" id="submit" name="submit">Sign Up</button>
