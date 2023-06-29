@@ -1,4 +1,6 @@
-  <!-- Sidebar -->
+ <?php include "../Database/config.php";?>
+ 
+ <!-- Sidebar -->
   <ul  style="background-color:#053742"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->

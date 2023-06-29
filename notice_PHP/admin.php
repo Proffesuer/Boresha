@@ -49,7 +49,8 @@ session_start();
                     <!-- Content Row -->
 
 
-hello world
+Welcome<br>
+<?php echo htmlentities($_SESSION['email']);?>
 
 
 
