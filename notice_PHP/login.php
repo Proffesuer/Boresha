@@ -95,6 +95,7 @@ exit();
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -106,43 +107,10 @@ exit();
 		<meta name="author" content="">
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
-
-	    <title>Shopping Portal | Signi-in | Signup</title>
-
-	    <!-- Bootstrap Core CSS -->
-	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	    
-	    <!-- Customizable CSS -->
-	    <link rel="stylesheet" href="assets/css/main.css">
-	    <link rel="stylesheet" href="assets/css/green.css">
-	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/css/owl.transitions.css">
-		<!--<link rel="stylesheet" href="assets/css/owl.theme.css">-->
-		<link href="assets/css/lightbox.css" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/animate.min.css">
-		<link rel="stylesheet" href="assets/css/rateit.css">
-		<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-
-		<!-- Demo Purpose Only. Should be removed in production -->
-		<link rel="stylesheet" href="assets/css/config.css">
-
-		<link href="assets/css/green.css" rel="alternate stylesheet" title="Green color">
-		<link href="assets/css/blue.css" rel="alternate stylesheet" title="Blue color">
-		<link href="assets/css/red.css" rel="alternate stylesheet" title="Red color">
-		<link href="assets/css/orange.css" rel="alternate stylesheet" title="Orange color">
-		<link href="assets/css/dark-green.css" rel="alternate stylesheet" title="Darkgreen color">
-		<!-- Demo Purpose Only. Should be removed in production : END -->
-
+	
 		
-		<!-- Icons/Glyphs -->
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-        <!-- Fonts --> 
-		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
-<script type="text/javascript">
+	    <title> Portal | Sign-in |Sign-up</title>
+        <script type="text/javascript">
 function valid()
 {
  if(document.register.password.value!= document.register.confirmpassword.value)
@@ -170,21 +138,6 @@ error:function (){}
 }
 </script>
 
-
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
-	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
-	    <meta name="robots" content="all">
-	
-		
-	    <title>Notice Portal | Signi-in | Signup</title>
 
 		<style>*,
         *::before,
@@ -515,7 +468,7 @@ error:function (){}
 
     <section class="forms-section">
         
-	<h1 class="section-title" style=""><a href="../" style="text-decoration:none; color:green;">Boresha</a>||Login||Signup</h1>
+	
 	
 	<div class="forms">
 			
@@ -536,7 +489,9 @@ error:function (){}
                     </span>
               <fieldset>
                 <legend >Please, enter your email and password for login.</legend>
+                <h4 for="login-email" style="color:#023020;"><a href="./" style="text-decoration:none;">Boresha Notice </a>Login<br></h4>
                 <div class="input-block">
+                
                   <label for="login-email">E-mail</label>
                   <input id="login-email" type="email" placeholder="Enter email" name="email"required>
                 </div>
@@ -554,7 +509,8 @@ error:function (){}
               <span class="underline"></span>
             </button>
             <form class="form form-signup"role="form" method="post" name="register" onSubmit="return valid();">
-              <fieldset>
+            <h4 for="login-email"style="color:#023020;"><a href="./" style="text-decoration:none;">Boresha Notice </a>Signup<br></h4>
+            <fieldset>
                 <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                 <div class="input-block">
                   <label for="signup-username">Full Names</label>
