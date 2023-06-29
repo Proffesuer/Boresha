@@ -49,19 +49,19 @@ else
 if($_SESSION['role'] == "admin")
 {
     $_SESSION['email']=$num['email'];
-    header("location:admin.php");
+    header("location:admin/index.php");
  
 }
 else
 if($_SESSION['role'] == "teacher")
 {
-    header("location:teacher.php");
+    header("location:teacher/index.php");
  
 }
 else
 if($_SESSION['role'] == "organization")
 {
-    header("location:organization.php");
+    header("location:organization/index.php");
  
 }
 else{

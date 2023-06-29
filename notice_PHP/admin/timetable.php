@@ -1,6 +1,8 @@
 <?php
-include "Database/config.php";
+include "../Database/config.php";
 session_start();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,16 +15,16 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Teacher's Dashboard</title>
+    <title>Boresha Smart Notice</title>
 
     <!-- Custom fonts for this template-->
-    <link href="Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -30,17 +32,18 @@ session_start();
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-<!--Navigation Bar starts here-->
-<?php include "includes/teacher_dash.php";?>
+        <!--navigation bar-->
 
-<!-- navigation bar ends here-->
-        
+
+
+        <!--end of navigation bar-->
+
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
@@ -48,13 +51,13 @@ session_start();
                     <!-- Content Row -->
                     <div class="row">
 
-                        <h3>Welcome<br><?php echo htmlentities($_SESSION['email']);?></h3>
+                        <h1>hello world </h1>
 
                         </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <?php include "includes/footer.php"?>
+           <?php include "../includes/footer.php";?>
             <!-- End of Footer -->
 
         </div>
@@ -89,21 +92,21 @@ session_start();
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="Dash_style/vendor/jquery/jquery.min.js"></script>
-    <script src="Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Dash_style/vendor/jquery/jquery.min.js"></script>
+    <script src="../Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="Dash_style/js/sb-admin-2.min.js"></script>
+    <script src="../Dash_style/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="Dash_style/vendor/chart.js/Chart.min.js"></script>
+    <script src="../Dash_style/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="Dash_style/js/demo/chart-area-demo.js"></script>
-    <script src="Dash_style/js/demo/chart-pie-demo.js"></script>
+    <script src="../Dash_style/js/demo/chart-area-demo.js"></script>
+    <script src="../Dash_style/js/demo/chart-pie-demo.js"></script>
 
 </body>
 
