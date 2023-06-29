@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include('config.php');
+include "Database/config.php";
 // Code user Registration
 if(isset($_POST['submit']))
 {

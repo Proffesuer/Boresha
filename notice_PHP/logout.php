@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("config.php");
+include "Database/config.php";
 $_SESSION['login']=="";
 date_default_timezone_set('Nairobi/Kenya');
 $ldate=date( 'd-m-Y h:i:s A', time () );
