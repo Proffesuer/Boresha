@@ -32,6 +32,7 @@ session_start();
     <div id="wrapper">
 <!--Navigation Bar starts here-->
 <?php include "includes/teacher_dash.php";?>
+
 <!-- navigation bar ends here-->
         
                 <!-- Begin Page Content -->
