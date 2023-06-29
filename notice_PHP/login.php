@@ -66,7 +66,7 @@ if($_SESSION['role'] == "organization")
 }
 else{
 
-    header("location:error.php");
+    header("location:404.html");
 }
 
 
