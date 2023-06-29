@@ -39,14 +39,11 @@ $uip=$_SERVER['REMOTE_ADDR'];
 $status=1;
 $log=mysqli_query($con,"insert into userlog(userEmail,userip,status) values('".$_SESSION['login']."','$uip','$status')");
 $_SESSION['role']=$num['role'];
-
+// statement to control files accessability with different users
 if($_SESSION['role'] == "student")
 {
-
-   
     header("location:student.php");
 
- 
 }
 else
 if($_SESSION['role'] == "admin")
