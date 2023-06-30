@@ -41,8 +41,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Components:</h6>
-                        <a class="collapse-item" href="./timetable.php">Timetable</a>
-                        <a class="collapse-item" href="./memo.php">Internal Memos</a>
+                        <a class="collapse-item" href="./timetable.php?page=timetable=updates">Timetable</a>
+                        <a class="collapse-item" href="./memo.php?page=Daily-memos">Internal Memos</a>
                     </div>
                 </div>
             </li>
@@ -58,9 +58,9 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Articles:</h6>
-                        <a class="collapse-item" href="./assignments.php">Assignments</a>
-                        <a class="collapse-item" href="./myproject.php">Projects</a>
-                        <a class="collapse-item" href="./research.php">Research</a>
+                        <a class="collapse-item" href="./assignments.php?page=check?Assignments">Assignments</a>
+                        <a class="collapse-item" href="./myproject.php?page=Projects">Projects</a>
+                        <a class="collapse-item" href="./research.php?page=Add?Knowledge">Research</a>
                        
                     </div>
                 </div>
@@ -86,10 +86,10 @@
                       
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Updates</h6>
-                        <a class="collapse-item" href="./jobs.php">Internships&Jobs</a>
-                        <a class="collapse-item" href="./clubs&Societies.php">Clubs&Socities</a>
-                        <a class="collapse-item" href="./politics.php">Politics</a>
-                        <a class="collapse-item" href="./SkulaAdverts.php"> Student Admisions</a>
+                        <a class="collapse-item" href="./jobs.php?page=Find?jobs?Internships">Internships&Jobs</a>
+                        <a class="collapse-item" href="./clubs&Societies.php?page=check?activities">Clubs&Socities</a>
+                        <a class="collapse-item" href="./politics.php?page=campus?politics">Politics</a>
+                        <a class="collapse-item" href="./SkulaAdverts.php?page=check?Adverts"> Student Admisions</a>
                     </div>
                 </div>
             </li>
