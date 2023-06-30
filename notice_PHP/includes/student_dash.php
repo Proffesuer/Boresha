@@ -1,4 +1,7 @@
+<?php include "../Database/config.php";
 
+
+?>
         <!-- Sidebar -->
         <ul  style="background-color:#053742"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -83,7 +86,7 @@
                       
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Updates</h6>
-                        <a class="collapse-item" href="404.html">Internships&Jobs</a>
+                        <a class="collapse-item" href="./jobs.php">Internships&Jobs</a>
                         <a class="collapse-item" href="404.html">Clubs&Socities</a>
                         <a class="collapse-item" href="blank.html">Politics</a>
                         <a class="collapse-item" href="blank.html"> Student Admisions</a>
@@ -290,7 +293,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo htmlentities($_SESSION['email']);?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo htmlentities($_SESSION['name']);?></span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>

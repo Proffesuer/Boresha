@@ -48,7 +48,7 @@ session_start();
                     <!-- Content Row -->
                     <div class="row">
 
-                   <h3>  Welcome<br><?php echo htmlentities($_SESSION['email']);?></h3>
+                    Welcome <?php echo htmlentities($_SESSION['name']);?>
     
                         </div>
             <!-- End of Main Content -->

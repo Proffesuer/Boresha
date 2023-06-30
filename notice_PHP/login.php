@@ -50,7 +50,7 @@ if($_SESSION['role'] == "student")
 else
 if($_SESSION['role'] == "admin")
 {
-    $_SESSION['email']=$num['email'];
+    
     header("location:admin/");
  
 }
