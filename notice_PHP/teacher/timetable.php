@@ -33,7 +33,7 @@ session_start();
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!--navigation bar-->
-
+        <?php include "../includes/teacher_dash.php";?>
 
 
         <!--end of navigation bar-->
