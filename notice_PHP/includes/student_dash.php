@@ -59,7 +59,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Articles:</h6>
                         <a class="collapse-item" href="./assignments.php">Assignments</a>
-                        <a class="collapse-item" href="./myprojects.php">Projects</a>
+                        <a class="collapse-item" href="./myproject.php">Projects</a>
                         <a class="collapse-item" href="./research.php">Research</a>
                        
                     </div>
@@ -87,7 +87,7 @@
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Updates</h6>
                         <a class="collapse-item" href="./jobs.php">Internships&Jobs</a>
-                        <a class="collapse-item" href="./clubs&societies.php">Clubs&Socities</a>
+                        <a class="collapse-item" href="./clubs&Societies.php">Clubs&Socities</a>
                         <a class="collapse-item" href="./politics.php">Politics</a>
                         <a class="collapse-item" href="./SkulaAdverts.php"> Student Admisions</a>
                     </div>
