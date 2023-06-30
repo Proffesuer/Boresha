@@ -55,7 +55,7 @@ session_start();
 
 
 Welcome<br>
-<?php echo htmlentities($_SESSION['email']);?>
+<?php echo htmlentities($_SESSION['name']);?>
 
 
 
