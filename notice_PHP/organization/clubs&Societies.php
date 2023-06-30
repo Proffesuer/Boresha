@@ -1,9 +1,10 @@
+
 <?php
 include "../Database/config.php";
+
 session_start();
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +16,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Boresha Smart Notice</title>
+    <title>Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,32 +33,35 @@ session_start();
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-        <!--navigation bar-->
-
-
-
-        <!--end of navigation bar-->
+<!--navigation bar-->
+<?php include "../includes/organization_dash.php";?>
+<!--navigation ends here-->
+      
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
+
+
+                    
                     <!-- Content Row -->
-                    <div class="row">
 
-                        <h1>hello world </h1>
 
-                        </div>
+Welcome
+<?php echo htmlentities($_SESSION['name']);?>
+
+  
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-           <?php include "../includes/footer.php";?>
+           <!-- Footer starts here-->
+            <?php include "../includes/footer.php"?>
             <!-- End of Footer -->
 
         </div>
@@ -85,7 +89,7 @@ session_start();
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <a class="btn btn-primary" href="../includes/logout.php">Logout</a>
                 </div>
             </div>
         </div>
@@ -111,3 +115,4 @@ session_start();
 </body>
 
 </html>
+

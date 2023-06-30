@@ -1,8 +1,9 @@
+
 <?php
 include "../Database/config.php";
+
 session_start();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Company Dashboard</title>
+    <title>Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,21 +33,39 @@ session_start();
 
     <!-- Page Wrapper -->
     <div id="wrapper">
+<!--navigation bar-->
+<?php include "../includes/organization_dash.php";?>
+<!--navigation ends here-->
+      
 
-        <!-- navigation bar-->
-        <?php include "../includes/organization_dash.php"?>
-        <!--End of navigation bar-->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
 
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
+
+
+
+                    
                     <!-- Content Row -->
-                    <div class="row">
 
-                        <h3>Welcome<br><?php echo htmlentities($_SESSION['name']);?></h3>
 
-                        </div>
+Welcome
+<?php echo htmlentities($_SESSION['name']);?>
+
+
+
+
+
+                   
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <?php include "../includes/footer.php";?>
+           <!-- Footer starts here-->
+            <?php include "../includes/footer.php"?>
             <!-- End of Footer -->
 
         </div>
