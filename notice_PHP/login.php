@@ -43,26 +43,26 @@ $_SESSION['role']=$num['role'];
 // statement to control files accessability with different users
 if($_SESSION['role'] == "student")
 {
-    header("location:student.php");
+    header("location:student/");
 
 }
 else
 if($_SESSION['role'] == "admin")
 {
     $_SESSION['email']=$num['email'];
-    header("location:admin/index.php");
+    header("location:admin/");
  
 }
 else
 if($_SESSION['role'] == "teacher")
 {
-    header("location:teacher/index.php");
+    header("location:teacher/");
  
 }
 else
 if($_SESSION['role'] == "organization")
 {
-    header("location:organization/index.php");
+    header("location:organization/");
  
 }
 else{

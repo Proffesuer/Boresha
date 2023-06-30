@@ -4,7 +4,7 @@
   <ul  style="background-color:#053742"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="./">
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-home"></i>
     </div>
@@ -16,7 +16,7 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item active" >
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="./">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a>
 </li>
@@ -39,8 +39,8 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Components:</h6>
-            <a class="collapse-item" href="../Application/timetable.php">Timetable</a>
-            <a class="collapse-item" href="cards.html">Internal Memos</a>
+            <a class="collapse-item" href="./timetable.php?page=time">Timetable</a>
+            <a class="collapse-item" href="./memo.php?page=Memos-updates">Internal Memos</a>
         </div>
     </div>
 </li>
@@ -56,9 +56,9 @@
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Articles:</h6>
-            <a class="collapse-item" href="utilities-color.html">Assignments</a>
-            <a class="collapse-item" href="utilities-border.html">Projects</a>
-            <a class="collapse-item" href="utilities-animation.html">Research</a>
+            <a class="collapse-item" href="./assignments.php?page=check-submit-assignment">Assignments</a>
+            <a class="collapse-item" href="./myproject.php?page=my-projects">Projects</a>
+            <a class="collapse-item" href="./research.php?page=research-Bora">Research</a>
            
         </div>
     </div>
@@ -84,10 +84,10 @@
           
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Updates</h6>
-            <a class="collapse-item" href="404.html">Internships&Jobs</a>
-            <a class="collapse-item" href="404.html">Clubs&Socities</a>
-            <a class="collapse-item" href="blank.html">Politics</a>
-            <a class="collapse-item" href="blank.html"> Student Admisions</a>
+            <a class="collapse-item" href="./jobs.php?page=search-for-jobs">Internships&Jobs</a>
+            <a class="collapse-item" href="">Clubs&Socities</a>
+            <a class="collapse-item" href="./politics.php?page=politics-university">Politics</a>
+            <a class="collapse-item" href="./SkulaAdverts.php?page=school-adverts"> Student Admisions</a>
         </div>
     </div>
 </li>
@@ -96,18 +96,18 @@
 
   <!-- Nav Item - Tables -->
   <li class="nav-item">
-    <a class="nav-link" href="tables.html">
+    <a class="nav-link" href="./hostels.php?page=check-for-hostels">
         <i class="fas fa-fw fa-bed"></i>
         <span>Hostels</span></a>
 </li>
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" href="user.php?page=manage-users">
         <i class="fas fa-fw fa-wrench"></i>
         <span>Manage Users</span></a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" href="admin.php?page=manage-admin">
         <i class="fas fa-fw fa-wrench"></i>
         <span>Manage Admin</span></a>
 </li>
