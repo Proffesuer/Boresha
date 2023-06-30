@@ -10,6 +10,7 @@ $email=$_POST['email'];
 $contactno=$_POST['contactno'];
 $password=md5($_POST['password']);
 $role=$_POST['role'];
+
 $query=mysqli_query($con,"insert into users(name,email,contactno,password,role) values('$name','$email','$contactno','$password','$role')");
 if($query)
 {

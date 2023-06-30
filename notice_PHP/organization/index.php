@@ -1,5 +1,5 @@
 <?php
-include "Database/config.php";
+include "../Database/config.php";
 session_start();
 ?>
 
@@ -18,13 +18,13 @@ session_start();
     <title>Company Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -34,7 +34,7 @@ session_start();
     <div id="wrapper">
 
         <!-- navigation bar-->
-        <?php include "includes/organization_dash.php"?>
+        <?php include "../includes/organization_dash.php"?>
         <!--End of navigation bar-->
 
                     <!-- Content Row -->
@@ -46,7 +46,7 @@ session_start();
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <?php include "includes/footer.php";?>
+            <?php include "../includes/footer.php";?>
             <!-- End of Footer -->
 
         </div>
@@ -74,28 +74,28 @@ session_start();
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <a class="btn btn-primary" href="../includes/logout.php">Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="Dash_style/vendor/jquery/jquery.min.js"></script>
-    <script src="Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Dash_style/vendor/jquery/jquery.min.js"></script>
+    <script src="../Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="Dash_style/js/sb-admin-2.min.js"></script>
+    <script src="../Dash_style/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="Dash_style/vendor/chart.js/Chart.min.js"></script>
+    <script src="../Dash_style/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="Dash_style/js/demo/chart-area-demo.js"></script>
-    <script src="Dash_style/js/demo/chart-pie-demo.js"></script>
+    <script src="../Dash_style/js/demo/chart-area-demo.js"></script>
+    <script src="../Dash_style/js/demo/chart-pie-demo.js"></script>
 
 </body>
 

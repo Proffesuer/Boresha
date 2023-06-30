@@ -1,8 +1,10 @@
 
 <?php
 include "../Database/config.php";
+
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +16,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Teacher's Dashboard</title>
+    <title>Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,11 +33,11 @@ session_start();
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-<!--Navigation Bar starts here-->
+<!--navigation bar-->
 <?php include "../includes/teacher_dash.php";?>
+<!--navigation ends here-->
+      
 
-<!-- navigation bar ends here-->
-        
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
@@ -47,15 +49,20 @@ session_start();
                     </div>
 
                     <!-- Content Row -->
-                    <div class="row">
 
-                        <h3>Welcome<br><?php echo htmlentities($_SESSION['email']);?></h3>
 
-                        </div>
+Welcome<br>
+<?php echo htmlentities($_SESSION['email']);?>
+
+
+
+
+
+                   
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <?php include "includes/footer.php"?>
+           <!-- Footer starts here-->
+            <?php include "../includes/footer.php"?>
             <!-- End of Footer -->
 
         </div>
@@ -83,7 +90,7 @@ session_start();
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <a class="btn btn-primary" href="../includes/logout.php">Logout</a>
                 </div>
             </div>
         </div>
@@ -91,7 +98,7 @@ session_start();
 
     <!-- Bootstrap core JavaScript-->
     <script src="../Dash_style/vendor/jquery/jquery.min.js"></script>
-    <script src="Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="../Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -109,3 +116,4 @@ session_start();
 </body>
 
 </html>
+
