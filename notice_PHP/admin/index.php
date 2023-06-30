@@ -54,7 +54,7 @@ session_start();
                     <!-- Content Row -->
 
 
-Welcome<br>
+Welcome
 <h3><?php echo ($_SESSION['name']);?></h3>
 
 
