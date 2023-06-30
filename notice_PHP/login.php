@@ -29,17 +29,18 @@ $query=mysqli_query($con,"SELECT * FROM users WHERE email='$email' and password=
 $num=mysqli_fetch_array($query);
 
 
+$_SESSION['role']=$num['role'];
 if($num>0)
 {
     
 $_SESSION['login']=$_POST['email'];
 $_SESSION['id']=$num['id'];
-$_SESSION['email']=$num['email'];
+$_SESSION['name']=$num['name'];
 $uip=$_SERVER['REMOTE_ADDR'];
 
 $status=1;
 $log=mysqli_query($con,"insert into userlog(userEmail,userip,status) values('".$_SESSION['login']."','$uip','$status')");
-$_SESSION['role']=$num['role'];
+
 // statement to control files accessability with different users
 if($_SESSION['role'] == "student")
 {

@@ -50,12 +50,12 @@ session_start();
 
 
 
-                    
+
                     <!-- Content Row -->
 
 
 Welcome<br>
-<?php echo htmlentities($_SESSION['email']);?>
+<h3><?php echo ($_SESSION['name']);?></h3>
 
 
 
