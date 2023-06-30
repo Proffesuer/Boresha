@@ -57,7 +57,11 @@ session_start();
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
-  
+
+
+
+
+                   
             <!-- End of Main Content -->
 
            <!-- Footer starts here-->
