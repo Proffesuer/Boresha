@@ -49,11 +49,52 @@ session_start();
                     <div class="row">
 
                     Welcome <?php echo htmlentities($_SESSION['name']);?>
+
+
+<!-- first content starts here-->
+
+
+<p class="">
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+
+hello world my name is levis chisira and 
+i come from kenya i study at the Catholic university of Eastern africa
+
+
+</p>
+
+
+
+
+
+<!--first content ends here-->
+
+
+
+
+
+
+
+
     
                         </div>
             <!-- End of Main Content -->
-
-            <!-- Footer -->
+    <!-- Footer -->
            <?php include "../includes/footer.php"?>
             <!-- End of Footer -->
 
