@@ -57,7 +57,24 @@ session_start();
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
+<!--Internal memo starts here-->
 
+<div class="memo">
+
+<h1 class=""> internal memo</h1>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<!--Internal memo ends here-->
 
 
 
