@@ -54,6 +54,7 @@ session_start();
                     <!-- Content Row -->
 
 
+
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
@@ -62,9 +63,6 @@ Welcome
 <div class="memo">
 
 <h1 class=""> internal memo</h1>
-
-
-
 
 
 

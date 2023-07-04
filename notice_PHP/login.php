@@ -30,12 +30,14 @@ $num=mysqli_fetch_array($query);
 
 
 $_SESSION['role']=$num['role'];
+$_SESSION['email']=$num['email'];
 if($num>0)
 {
     
 $_SESSION['login']=$_POST['email'];
 $_SESSION['id']=$num['id'];
 $_SESSION['name']=$num['name'];
+
 $uip=$_SERVER['REMOTE_ADDR'];
 
 $status=1;
