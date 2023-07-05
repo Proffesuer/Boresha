@@ -58,6 +58,14 @@ Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
 
+<?php include "../jobs/jobse.php";?>
+
+
+
+
+
+
+
 
 
 
