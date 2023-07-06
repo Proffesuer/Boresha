@@ -26,9 +26,8 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="../job/stylejob.css" rel="stylesheet">
-    <link href="../job/responsive.css" rel="stylesheet">
-
+    <link href="stylejob.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -36,7 +35,7 @@ session_start();
     <!-- Page Wrapper -->
     <div id="wrapper">
 <!--navigation bar-->
-<?php include "../includes/student_dash.php";?>
+<?php include "../includes/admin_dash.php";?>
 <!--navigation ends here-->
       
 
@@ -46,8 +45,7 @@ session_start();
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        
                     </div>
 
 
@@ -59,6 +57,7 @@ session_start();
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
+
 <!-- Start Page Title Area -->
 <div class="page-title-area">
 			<div class="container">
@@ -66,16 +65,15 @@ Welcome
 					<h2>Apply Jobs Internship</h2>
 					<ul>
 						
-                    <li><a href="jobs.php">Apply</a></li>
+						<li><a href="jobs.php">Post</a></li>
                         <li> <a href="job-listing.php">Jobs</a></li>
-                        
+                        <li><a href="apply.php">Apply</a></li>
                         <li><a href="job-details.php">Job Details</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<!-- End Page Title Area -->
-
 
                    
             <!-- End of Main Content -->
