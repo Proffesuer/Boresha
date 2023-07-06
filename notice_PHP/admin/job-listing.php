@@ -44,11 +44,7 @@ session_start();
 				<div class="page-title-content">
 					<h2>Job Listing</h2>
 					<ul>
-						<li>
-							<a href="./">
-								Home 
-							</a>
-						</li>
+						
 						<li><a href="jobs.php">Post</a></li>
                         <li> <a href="job-listing.php">Jobs</a></li>
                         <li><a href="apply.php">Apply</a></li>

@@ -1,287 +1,42 @@
-<!doctype html>
-<html lang="zxx">
-    
-<!-- Mirrored from templates.envytheme.com/jubi/default/job-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Jul 2023 11:49:54 GMT -->
+
+<?php
+include "../Database/config.php";
+
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap Min CSS --> 
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<!-- Owl Theme Default Min CSS --> 
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		<!-- Owl Carousel Min CSS --> 
-		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<!-- Animate Min CSS --> 
-		<link rel="stylesheet" href="assets/css/animate.min.css">
-		<!-- Boxicons Min CSS --> 
-		<link rel="stylesheet" href="assets/css/boxicons.min.css"> 
-		<!-- Magnific Popup Min CSS --> 
-		<link rel="stylesheet" href="assets/css/magnific-popup.min.css"> 
-		<!-- Flaticon CSS --> 
-		<link rel="stylesheet" href="assets/css/flaticon.css">
-		<!-- Meanmenu Min CSS -->
-		<link rel="stylesheet" href="assets/css/meanmenu.min.css">
-		<!-- Nice Select Min CSS -->
-		<link rel="stylesheet" href="assets/css/nice-select.min.css">
-		<!-- Odometer Min CSS-->
-		<link rel="stylesheet" href="assets/css/odometer.min.css">
-		<!-- Date Picker CSS-->
-		<link rel="stylesheet" href="assets/css/date-picker.min.css">
-		<!-- Muli Fonts Min CSS-->
-		<link rel="stylesheet" href="assets/css/muli-fonts.css">
-		<!-- Style CSS -->
-		<link rel="stylesheet" href="assets/css/style.css">
-		<!-- Responsive CSS -->
-		<link rel="stylesheet" href="assets/css/responsive.css">
-		
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="assets/images/favicon.png">
-		<!-- Title -->
-		<title>Jubi - Job Board HTML Template</title>
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <body>
-		<!-- Start Preloader Area -->
-		<div class="preloader">
-			<div class="lds-ripple">
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		<!-- End Preloader Area -->
-		
-		<!-- Start Header Area -->
-		
-			
-			<!-- Start Navbar Area -->
-			<div class="navbar-area">
-				<div class="mobile-nav">
-					<div class="container">
-						<div class="mobile-menu">
-							<div class="logo">
-								<a href="index.html">
-									<img src="assets/images/logo.png" alt="logo">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="desktop-nav">
-					<div class="container">
-						<nav class="navbar navbar-expand-md navbar-light">
-							<a class="navbar-brand" href="index.html">
-								<img src="assets/images/logo.png" alt="logo">
-							</a>
-	
-							<div class="collapse navbar-collapse mean-menu">
-								<ul class="navbar-nav m-auto">
-									<li class="nav-item">
-										<a href="#" class="nav-link">
-											Home
-											<i class="bx bx-chevron-down"></i>
-										</a>
-			
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="index.html" class="nav-link">Home One</a>
-											</li>
-											<li class="nav-item">
-												<a href="index-2.html" class="nav-link">Home Two</a>
-											</li>
-											<li class="nav-item">
-												<a href="index-3.html" class="nav-link">Home Three</a>
-											</li>
-										</ul>
-									</li>
+    <title>Jobs|Internships</title>
 
-									<li class="nav-item">
-										<a href="#" class="nav-link active">
-											Jobs
-											<i class="bx bx-chevron-down"></i>
-										</a>
-	
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="job-listing.html" class="nav-link active">Job Listing</a>
-											</li>
-											<li class="nav-item">
-												<a href="post-job.html" class="nav-link">Post A Job</a>
-											</li>
-											<li class="nav-item">
-												<a href="job-details.html" class="nav-link">Job Details</a>
-											</li>
-										</ul>
-									</li>
+    <!-- Custom fonts for this template-->
+    <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
-									<li class="nav-item">
-										<a href="#" class="nav-link">
-											Candidates
-											<i class="bx bx-chevron-down"></i>
-										</a>
-	
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="candidates-listing.html" class="nav-link">Candidates Listing</a>
-											</li>
-											<li class="nav-item">
-												<a href="candidates-details.html" class="nav-link">Candidates Details</a>
-											</li>
+    <!-- Custom styles for this template-->
+    <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="stylejob.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+</head>
 
-											<li class="nav-item">
-												<a href="#" class="nav-link">
-													Candidate Dashboard
-													<i class="bx bx-chevron-down"></i>
-												</a>
-					
-												<ul class="dropdown-menu">
-													<li class="nav-item">
-														<a href="dashboard.html" class="nav-link">Dashboard</a>
-													</li>
-													<li class="nav-item">
-														<a href="profile.html" class="nav-link">Profile</a>
-													</li>
-													<li class="nav-item">
-														<a href="resume.html" class="nav-link">Resume</a>
-													</li>
-													<li class="nav-item">
-														<a href="bookmarks.html" class="nav-link">Bookmarks</a>
-													</li>
-													<li class="nav-item">
-														<a href="applied-jobs.html" class="nav-link">Applied Jobs</a>
-													</li>
-													<li class="nav-item">
-														<a href="alert-jobs.html" class="nav-link">Alert Jobs</a>
-													</li>
-													<li class="nav-item">
-														<a href="message.html" class="nav-link">Message</a>
-													</li>
-													<li class="nav-item">
-														<a href="change-password.html" class="nav-link">Change Password</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
+<body id="page-top">
 
-									<li class="nav-item">
-										<a href="#" class="nav-link">
-											Employers
-											<i class="bx bx-chevron-down"></i>
-										</a>
-	
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="employers-listing.html" class="nav-link">Employers Listing</a>
-											</li>
-											<li class="nav-item">
-												<a href="employers-details.html" class="nav-link">Employers Details</a>
-											</li>
-										</ul>
-									</li>
-
-									<li class="nav-item">
-										<a href="#" class="nav-link">
-											Pages
-											<i class="bx bx-chevron-down"></i>
-										</a>
-			
-										<ul class="dropdown-menu">
-											<li class="nav-item">
-												<a href="about-us.html" class="nav-link">About Us</a>
-											</li>
-											<li class="nav-item">
-												<a href="pricing.html" class="nav-link">Pricing</a>
-											</li>
-											<li class="nav-item">
-												<a href="faq.html" class="nav-link">FAQ</a>
-											</li>
-
-											<li class="nav-item">
-												<a href="#" class="nav-link">
-													Blog
-													<i class="bx bx-chevron-down"></i>
-												</a>
-					
-												<ul class="dropdown-menu">
-													<li class="nav-item">
-														<a href="blog.html" class="nav-link">Blog</a>
-													</li>
-													<li class="nav-item">
-														<a href="blog-details.html" class="nav-link">Blog Details</a>
-													</li>
-												</ul>
-											</li>
-
-											<li class="nav-item">
-												<a href="contact-us.html" class="nav-link">Contact Us</a>
-											</li>
-											<li class="nav-item">
-												<a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
-											</li>
-											<li class="nav-item">
-												<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-											</li>
-											<li class="nav-item">
-												<a href="log-in-register.html" class="nav-link">Log In / Register</a>
-											</li>
-											<li class="nav-item">
-												<a href="freelancer.html" class="nav-link">Freelancer</a>
-											</li>
-											<li class="nav-item">
-												<a href="testimonials.html" class="nav-link">Testimonials</a>
-											</li>
-											<li class="nav-item">
-												<a href="coming-soon.html" class="nav-link">Coming Soon</a>
-											</li>
-											<li class="nav-item">
-												<a href="404.html" class="nav-link">404 Error Page</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-								
-								<div class="others-option">
-									<div class="get-quote">
-										<a href="post-job.html" class="default-btn">
-											Post a Job
-										</a>
-									</div>
-								</div>
-							</div>
-						</nav>
-					</div>
-				</div>
-	
-				<div class="others-option-for-responsive">
-					<div class="container">
-						<div class="dot-menu">
-							<div class="inner">
-								<div class="circle circle-one"></div>
-								<div class="circle circle-two"></div>
-								<div class="circle circle-three"></div>
-							</div>
-						</div>
-						
-						<div class="container">
-							<div class="option-inner">
-								<div class="others-option justify-content-center d-flex align-items-center">
-									<div class="get-quote">
-										<a href="post-job.html" class="default-btn">
-											Post a Job
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Navbar Area -->
-		</header>
-		<!-- End Header Area -->
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+<!--navigation bar-->
+<?php include "../includes/admin_dash.php";?>
+<!--navigation ends here-->
 
 		<!-- Start Page Title Area -->
 		<div class="page-title-area">
@@ -289,12 +44,11 @@
 				<div class="page-title-content">
 					<h2>Job Listing</h2>
 					<ul>
-						<li>
-							<a href="index.html">
-								Home 
-							</a>
-						</li>
-						<li class="active">Job Listing</li>
+						
+						<li><a href="jobs.php">Post</a></li>
+                        <li> <a href="job-listing.php">Jobs</a></li>
+                        <li><a href="apply.php">Apply</a></li>
+                        <li><a href="job-details.php">Job Details</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1207,41 +961,23 @@
 		<!-- End Go Top Area -->
 		
 
-        <!-- Jquery Min JS -->
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
-        <!-- Popper Min JS -->
-        <script src="assets/js/popper.min.js"></script>
-        <!-- Bootstrap Min JS -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Meanmenu Min JS -->
-		<script src="assets/js/meanmenu.min.js"></script>
-		<!-- Wow Min JS -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Owl Carousel Min JS -->
-		<script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Nice Select Min JS -->
-		<script src="assets/js/nice-select.min.js"></script>
-        <!-- Magnific Popup Min JS -->
-		<script src="assets/js/magnific-popup.min.js"></script>
-		<!-- Mixitup JS --> 
-		<script src="assets/js/jquery.mixitup.min.js"></script>
-		<!-- Appear Min JS --> 
-        <script src="assets/js/appear.min.js"></script>
-		<!-- Odometer Min JS --> 
-		<script src="assets/js/odometer.min.js"></script>
-		<!-- Range Slider Min JS --> 
-		<script src="assets/js/range-slider.min.js"></script>
-		<!-- Datepicker Min JS --> 
-		<script src="assets/js/bootstrap-datepicker.min.js"></script>
-		<!-- Form Validator Min JS -->
-		<script src="assets/js/form-validator.min.js"></script>
-		<!-- Contact JS -->
-		<script src="assets/js/contact-form-script.js"></script>
-		<!-- Ajaxchimp Min JS -->
-		<script src="assets/js/ajaxchimp.min.js"></script>
-        <!-- Custom JS -->
-		<script src="assets/js/custom.js"></script>
-    </body>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../Dash_style/vendor/jquery/jquery.min.js"></script>
+    <script src="../Dash_style/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Mirrored from templates.envytheme.com/jubi/default/job-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Jul 2023 11:49:59 GMT -->
+    <!-- Core plugin JavaScript-->
+    <script src="../Dash_style/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../Dash_style/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../Dash_style/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../Dash_style/js/demo/chart-area-demo.js"></script>
+    <script src="../Dash_style/js/demo/chart-pie-demo.js"></script>
+
+</body>
+
 </html>
