@@ -57,8 +57,8 @@ session_start();
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
-
-
+<?php include "../jobs/assets/";?>
+<?php include "../jobs/jobse.php";?>
 
 
                    

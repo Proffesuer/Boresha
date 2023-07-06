@@ -67,7 +67,7 @@
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Updates</h6>
     
-            <a class="collapse-item" href="./jobs?page=offer?jobs">Internships&Jobs</a>
+            <a class="collapse-item" href="./jobs.php?page=offer?jobs">Internships&Jobs</a>
             <a class="collapse-item" href="./SkulaAdverts.php?page=Advertise?products">Advertise</a>
             <a class="collapse-item" href="./clubs&Societies.php?page=sponser?Events">Clubs&Societies</a>
         </div>
@@ -310,9 +310,4 @@
     <!-- Begin Page Content -->
     <div class="container-fluid">
 
-        <!-- Page Heading -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                    class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-        </div>
+       
