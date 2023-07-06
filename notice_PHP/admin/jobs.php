@@ -26,7 +26,8 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link href="stylejob.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -61,7 +62,376 @@ Welcome
 
 
 
+</header>
+		<!-- End Header Area -->
 
+		<!-- Start Page Title Area -->
+		<div class="page-title-area">
+			<div class="container">
+				<div class="page-title-content">
+					<h2>Post a Job</h2>
+					<ul>
+						<li>
+							<a href="./">
+								Home 
+							</a>
+						</li>
+						<li><a href="jobs.php">Post</a></li>
+                        <li> <a href="job-listing.php">Jobs</a></li>
+                        <li><a href="apply.php">Apply</a></li>
+                        <li><a href="job-details.php">Job Details</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Page Title Area -->
+
+		<!-- Start Candidates Job Information Area -->
+		<section class="job-information-area ptb-100">
+			<div class="container">
+				<div class="job-information">
+					<h3>Job Information</h3>
+
+					<form>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Job title*</label>
+									<input class="form-control" type="text" name="title">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Category*</label>
+									<select>
+										<option value="1">UX/UI Designer</option>
+										<option value="2">Web Developer</option>
+										<option value="3">Web Designer</option>
+										<option value="4">Software Developer</option>
+										<option value="5">SEO</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Job Types*</label>
+									<select>
+										<option value="1">Full Time</option>
+										<option value="2">Part Time</option>
+										<option value="3">Contract</option>
+										<option value="4">Internship</option>
+										<option value="5">Office</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Application Deadline</label>
+									<div class="input-group date" id="datetimepicker">
+										<input type="text" class="form-control" placeholder="12/11/2020">
+										<span class="input-group-addon"></span>
+										<i class="bx bx-calendar"></i>
+									</div>	
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Salary Currency</label>
+									<select>
+										<option value="1">Default</option>
+										<option value="2">20000 To 30000</option>
+										<option value="3">40000 To 50000</option>
+										<option value="4">60000 To 70000</option>
+										<option value="5">80000 To 90000</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Job Description*</label>
+									<textarea name="message" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<h3>Company Information</h3>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Company Name</label>
+									<input class="form-control" type="text" name="Company">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Company Website</label>
+									<input class="form-control" type="text" name="Website">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Company Industry</label>
+									<input class="form-control" type="text" name="Industry">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Facebook Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Linkedin Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Twitter Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Instagram Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Company Description*</label>
+									<textarea name="message" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="choose-img">
+									<p>Logo (Optional)</p>
+									<label for="img">Select image:</label>
+  									<input type="file" id="img" name="img" accept="image/*">
+									<p>Maximum file size: 2 MB</p>
+								</div>
+							</div>
+						</div>
+
+						<h3>Recruiter Information</h3>
+
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Full Name</label>
+									<input class="form-control" type="text" name="Name">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Email</label>
+									<input class="form-control" type="email" name="email">
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="form-group checkboxs">
+									<input type="checkbox" id="chb2">
+									<p>
+										By clicking checkbox, you agree to our <a href="terms-conditions.html">Terms & Conditions</a> And <a href="privacy-policy.html">Privacy Policy.</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<button class="default-btn">
+									Post a Job
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- End Candidates Job Information Area -->
+
+		<!-- Start Subscribe Area -->
+		<section class="subscribe-area subscribe-area-about-page">
+			<div class="container">
+				<div class="subscribe-bg">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="subscribe-content">
+								<h2>Find Your Next Great Job Opportunity!</h2>
+							</div>
+						</div>
+	
+						<div class="col-lg-6">
+							<form class="newsletter-form" data-toggle="validator">
+								<input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
+	
+								<button class="default-btn" type="submit">
+									<span>Subscribe</span>
+								</button>
+	
+								<div id="validator-newsletter" class="form-result"></div>
+								<p>Join The Newsletter 10,000 Users Already!</p>
+							</form>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Subscribe Area -->
+
+		<!-- Start Footer Area -->
+		<footer class="footer-area pt-100 pb-70">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget single-bg">
+							<a href="index.html" class="logo">
+								<img src="assets/images/logo.png" alt="Image">
+							</a>
+
+							<p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consec tetur.</p>
+
+							<ul class="social-icon">
+								<li>
+									<a href="#">
+										<i class="bx bxl-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="bx bxl-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="bx bxl-linkedin-square"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="bx bxl-twitter"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<h3>Contact</h3>
+
+							<ul class="address">
+								<li>
+									<i class="bx bx-phone-call"></i>
+									<span>Phone:</span>
+									<a href="tel:+1-(514)-7939-357">+1 (514) 7939-357</a>
+								</li>
+								<li>
+									<i class="bx bx-envelope"></i>
+									<span>Email:</span>
+									<a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#422a272e2e2d022837202b6c212d2f"><span class="__cf_email__" data-cfemail="036b666f6f6c436976616a2d606c6e">[email&#160;protected]</span></a>
+								</li>
+								<li class="location">
+									<i class="bx bx-location-plus"></i>
+									<span>Address:</span>
+									6890 Blvd, The Bronx, NY 1058 New York, USA
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<h3>Helpful Resources</h3>
+
+							<ul class="import-link">
+								<li>
+									<a href="#">Create Account</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+								<li>
+									<a href="#">Site Map</a>
+								</li>
+								<li>
+									<a href="#">Terms of Use</a>
+								</li>
+								<li>
+									<a href="#">Privacy Centre</a>
+								</li>
+								<li>
+									<a href="#">Blog</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-footer-widget">
+							<h3>Job Seekers</h3>
+
+							<ul class="import-link">
+								<li>
+									<a href="#">Create Account</a>
+								</li>
+								<li>
+									<a href="#">Browse Jobs</a>
+								</li>
+								<li>
+									<a href="#">Upload CV</a>
+								</li>
+								<li>
+									<a href="#">Company Profile</a>
+								</li>
+								<li>
+									<a href="#">International Jobs</a>
+								</li>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+
+		<!-- Start Copy Right Area -->
+		<div class="copy-right-area">
+			<div class="container">
+				<p>
+					© 2021 Jubi Is Proudly Created By
+					<a href="https://envytheme.com/" target="_blank">EnvyTheme</a>
+				</p>
+			</div>
+		</div>
+		<!-- End Copy Right Area -->
+		
+		<!-- Start Go Top Area -->
+		<div class="go-top">
+			<i class="bx bx-chevrons-up"></i>
+			<i class="bx bx-chevrons-up"></i>
+		</div>
+		<!-- End Go Top Area -->
+		
 
 
 
