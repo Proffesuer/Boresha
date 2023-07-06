@@ -26,7 +26,11 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
-
+	
+	<link href="../job/stylejob.css" rel="stylesheet">
+	
+	
+	<link href="../job/responsive.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -59,6 +63,264 @@ Welcome
 
 </header>
 		
+
+
+
+		<!-- Start Page Title Area -->
+		<div class="page-title-area">
+			<div class="container">
+				<div class="page-title-content">
+					<h2>Post a Job</h2>
+					<ul>
+						<li>
+							<a href="index.php">
+								Home 
+							</a>
+						</li>
+						<li><a href="jobs.php?page=post?a?job">Post</a></li>
+                        <li> <a href="job-listing.php?page=check?on-jobs-list">Jobs</a></li>
+
+                        <li><a href="job-details.php?page=check-details">Job Details</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Page Title Area -->
+
+		<!-- Start Candidates Job Information Area -->
+		<section class="job-information-area ptb-100">
+			<div class="container">
+				<div class="job-information">
+					<h3>Job Information</h3>
+
+					<form>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Job title*</label>
+									<input class="form-control" type="text" name="title">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Category*</label>
+									<select>
+										<option value="1">UX/UI Designer</option>
+										<option value="2">Web Developer</option>
+										<option value="3">Web Designer</option>
+										<option value="4">Software Developer</option>
+										<option value="5">SEO</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Job Types*</label>
+									<select>
+										<option value="1">Full Time</option>
+										<option value="2">Part Time</option>
+										<option value="3">Contract</option>
+										<option value="4">Internship</option>
+										<option value="5">Office</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Application Deadline</label>
+									<div class="input-group date" id="datetimepicker">
+										<input type="text" class="form-control" placeholder="12/11/2020">
+										<span class="input-group-addon"></span>
+										<i class="bx bx-calendar"></i>
+									</div>	
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Salary Currency</label>
+									<select>
+										<option value="1">Default</option>
+										<option value="2">20000 To 30000</option>
+										<option value="3">40000 To 50000</option>
+										<option value="4">60000 To 70000</option>
+										<option value="5">80000 To 90000</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Job Description*</label>
+									<textarea name="message" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<h3>Company Information</h3>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Company Name</label>
+									<input class="form-control" type="text" name="Company">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Company Website</label>
+									<input class="form-control" type="text" name="Website">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Company Industry</label>
+									<input class="form-control" type="text" name="Industry">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Facebook Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Linkedin Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Twitter Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Instagram Page (Link)</label>
+									<input class="form-control" type="text" name="Link">
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label>Company Description*</label>
+									<textarea name="message" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="choose-img">
+									<p>Logo (Optional)</p>
+									<label for="img">Select image:</label>
+  									<input type="file" id="img" name="img" accept="image/*">
+									<p>Maximum file size: 2 MB</p>
+								</div>
+							</div>
+						</div>
+
+						<h3>Recruiter Information</h3>
+
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Full Name</label>
+									<input class="form-control" type="text" name="Name">
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<div class="form-group">
+									<label>Email</label>
+									<input class="form-control" type="email" name="email">
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="form-group checkboxs">
+									<input type="checkbox" id="chb2">
+									<p>
+										By clicking checkbox, you agree to our <a href="terms-conditions.html">Terms & Conditions</a> And <a href="privacy-policy.html">Privacy Policy.</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<button class="default-btn">
+									Post a Job
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- End Candidates Job Information Area -->
+
+		<!-- Start Subscribe Area -->
+		<section class="subscribe-area subscribe-area-about-page">
+			<div class="container">
+				<div class="subscribe-bg">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="subscribe-content">
+								<h2>Find Your Next Great Job Opportunity!</h2>
+							</div>
+						</div>
+	
+						<div class="col-lg-6">
+							<form class="newsletter-form" data-toggle="validator">
+								<input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
+	
+								<button class="default-btn" type="submit">
+									<span>Subscribe</span>
+								</button>
+	
+								<div id="validator-newsletter" class="form-result"></div>
+								<p>Join The Newsletter 10,000 Users Already!</p>
+							</form>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Subscribe Area -->
+
+	
+
+		<!-- Start Copy Right Area -->
+		<div class="copy-right-area">
+			<div class="container">
+				<p>
+					© 2021 Boresha Is Proudly Created By
+					<a href="https://Bennavisoftsolution.com/" target="_blank">Bennavi Softsolution</a>
+				</p>
+			</div>
+		</div>
+		<!-- End Copy Right Area -->
+		
+		<!-- Start Go Top Area -->
+		<div class="go-top">
+			<i class="bx bx-chevrons-up"></i>
+			<i class="bx bx-chevrons-up"></i>
+		</div>
+		<!-- End Go Top Area -->
+		
+
+
+
+
+
 
 
 

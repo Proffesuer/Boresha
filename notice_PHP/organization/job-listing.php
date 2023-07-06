@@ -28,6 +28,11 @@ session_start();
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="stylejob.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
+
+	<link href="../job/stylejob.css" rel="stylesheet">
+	
+	
+	<link href="../job/responsive.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -35,7 +40,7 @@ session_start();
     <!-- Page Wrapper -->
     <div id="wrapper">
 <!--navigation bar-->
-<?php include "../includes/admin_dash.php";?>
+<?php include "../includes/organization_dash.php";?>
 <!--navigation ends here-->
 
 		<!-- Start Page Title Area -->

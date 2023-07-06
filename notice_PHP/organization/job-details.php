@@ -27,6 +27,11 @@ session_start();
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="stylejob.css" rel="stylesheet">
     <link href="responsive.css" rel="stylesheet">
+
+	<link href="../job/stylejob.css" rel="stylesheet">
+	
+	
+	<link href="../job/responsive.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
