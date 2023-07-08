@@ -63,7 +63,7 @@ Welcome
 <div class="page-title-area">
 			<div class="container">
 				<div class="page-title-content">
-					<h2>Apply Jobs Internship</h2>
+					<h3>Apply Jobs</h3>
 					<ul>
 						
                     <li><a href="jobs.php">Apply</a></li>

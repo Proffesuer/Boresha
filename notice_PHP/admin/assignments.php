@@ -58,7 +58,20 @@ Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
 
-<div class="assign">
+<div class="container">
+<!--Homework submision Header starts here-->
+<header>
+
+
+
+
+</header>
+
+<!--homework header ends here-->
+
+
+
+
 
 
 

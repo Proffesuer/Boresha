@@ -1,4 +1,5 @@
- <?php include "../Database/config.php";?>
+
+
  
  <!-- Sidebar -->
   <ul  style="background-color:#053742"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -319,7 +320,7 @@
                         <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                         Settings
                     </a>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="./logs.php?page=check-logins">
                         <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                         Activity Log
                     </a>
