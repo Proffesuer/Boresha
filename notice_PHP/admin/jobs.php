@@ -58,9 +58,6 @@ Welcome
 <?php echo htmlentities($_SESSION['name']);?>
 
 
-
-
-
 </header>
 		<!-- End Header Area -->
 

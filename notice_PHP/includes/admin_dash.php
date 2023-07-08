@@ -40,7 +40,7 @@
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Components:</h6>
             <a class="collapse-item" href="./timetable.php?page=time">Timetable</a>
-            <a class="collapse-item" href="./memo.php?page=Memos-updates">Internal Memos</a>
+            <a class="collapse-item" href="./memo.php?page=Memos-updates">Event Scheduler</a>
         </div>
     </div>
 </li>

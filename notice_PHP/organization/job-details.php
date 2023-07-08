@@ -39,7 +39,7 @@ session_start();
     <!-- Page Wrapper -->
     <div id="wrapper">
 <!--navigation bar-->
-<?php include "../includes/admin_dash.php";?>
+<?php include "../includes/organization_dash.php";?>
 <!--navigation ends here-->
       
 

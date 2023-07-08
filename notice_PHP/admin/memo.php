@@ -16,7 +16,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Internal Memos</title>
+    <title>Event Scheduler</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -62,7 +62,7 @@ Welcome
 
 <div class="memo">
 
-<h1 class=""> internal memo</h1>
+<h1 class=""> Event Scheduler</h1>
 
 
 
