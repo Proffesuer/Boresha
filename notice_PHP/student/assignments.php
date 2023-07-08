@@ -26,6 +26,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../admin/styles.css" class="">
 
 </head>
 
@@ -53,11 +54,30 @@ session_start();
                     
                     <!-- Content Row -->
 
-
+<hr>
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
+<div class="line">
+<hr>
+</div>
+<!--header starts here-->
+<div class="header">
+
+<h1>  <i class="fas fa-book fa-sm text-white-50"></i>
+         MyAssignments <br>Board</h1>
 
 
+</div>
+<!--header ends here-->
+<!--assignment board starts here-->
+<div class="assignment">
+
+
+
+
+</div>
+
+<!--assignment board ends here-->
 
 
 

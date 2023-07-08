@@ -39,7 +39,7 @@ session_start();
 <!--navigation ends here-->
 
 		<!-- Start Page Title Area -->
-		<div class="page-title-area">
+		<div class="page-title-area"style="background-color:whitesmoke;">
 			<div class="container">
 				<div class="page-title-content">
 					<h2>Job Listing</h2>

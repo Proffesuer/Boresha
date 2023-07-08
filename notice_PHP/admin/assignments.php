@@ -26,7 +26,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -45,7 +45,7 @@ session_start();
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                        <a href="#" class="d-none d-sm-inline-block submit" style="text-decoration:none;border-radius:5px;"><i
                                 class="fas fa-book fa-sm text-white-50"></i> Assignment List</a>
                     </div>
 
@@ -54,9 +54,13 @@ session_start();
                     
                     <!-- Content Row -->
 
+<hr>
 
+  Admin ...<?php echo ($_SESSION['name']);?>
+  <div class="line">
 
-Create Assignment
+  <hr>
+  </div>
 
 
 <div class="container">
@@ -71,7 +75,7 @@ Create Assignment
 <div class="header">
 
 <h1>  <i class="fas fa-book fa-sm text-white-50"></i>
-         Assignment Smart <br>Board</h1>
+         Assignment <br>Board</h1>
 
 
 </div>
@@ -113,13 +117,13 @@ Note: The assignment will be visisble to the students who are only subscribed to
 <div class="row">
     <div class="col-md-5">
     <lable>Date Given:</lable><br>
-<input name="faculty" class="date"style="text">
+<input name="faculty" class="date"type="date">
 
 
     </div>
     <div class="col-md-5">
     <lable>submision Date:</lable><br>
-<input name="faculty" class="date"style="text">
+<input name="subdate" class="date"type="date">
 
 
     </div>
@@ -127,13 +131,13 @@ Note: The assignment will be visisble to the students who are only subscribed to
 <div class="row">
 <div class="col-md-7">
 <lable>Upload your assignment here*</lable><br>
-<input name="faculty" class="upload"style="text">
+<input name="faculty" class="upload"type="">
 
 </div>
 <div class="col-md-5">
 
-<lable>Link your Assignment</lable><br>
-<input name="faculty" class="link" style="text">
+<lable>Link your Assignment(optional)</lable><br>
+<input name="faculty" class="link" style="text"placeholder=" Link materials for assignment">
 
 
 </div>
@@ -151,8 +155,8 @@ Note: The assignment will be visisble to the students who are only subscribed to
 
 
 <lable>Additional comments or instruction:</lable><br>
-<input name="faculty"class="addit" style="text"><br>
-<input name="Submit" type="button"value="Submit">
+<input name="faculty"class="addit" style="text"placeholder="Write More instructions to the students on the assignment you are giving"><br>
+<input name="Submit" class="submit"type="button"value="Submit">
 
 
 
@@ -173,10 +177,27 @@ Note: The assignment will be visisble to the students who are only subscribed to
 
 
 </div>
+<div class="line">
+    <hr>
+</div>
+
+<!--assignment list starts here-->
+
+<!--assignment list starts here-->
+<div class="container">
+<div class="lists">
+    <h4 class="head">My Assignments:</h4>
+<hr>
 
 
 
+</div>
+</div>
 
+
+<!--assignment list ends here-->
+
+<!--assignment list ends here-->
 
 
 
