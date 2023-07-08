@@ -2,7 +2,7 @@
 
  
  <!-- Sidebar -->
-  <ul  style="background-color:#053742"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+  <ul  style="background-color:#053742;"class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./">

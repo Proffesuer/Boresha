@@ -25,7 +25,7 @@ session_start();
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../Dash_style/css/sb-admin-2.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -46,7 +46,7 @@ session_start();
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                                class="fas fa-book fa-sm text-white-50"></i> Assignment List</a>
                     </div>
 
 
@@ -55,8 +55,8 @@ session_start();
                     <!-- Content Row -->
 
 
-Welcome
-<?php echo htmlentities($_SESSION['name']);?>
+
+Create Assignment
 
 
 <div class="container">
@@ -70,7 +70,8 @@ Welcome
 
 <div class="header">
 
-Create A New Assignment 
+<h1>  <i class="fas fa-book fa-sm text-white-50"></i>
+         Assignment Smart <br>Board</h1>
 
 
 </div>
@@ -78,13 +79,91 @@ Create A New Assignment
 <!--homework header ends here-->
 <!--instructions starts here-->
 <div class="instruction">
+<p>Hello <?php echo ($_SESSION['name']);?> , Welcome to Assignment board on Boresha notice system.To create a new assignment for 
+your class fill in the below form and upload the the assignment file for your students.
+Note: The assignment will be visisble to the students who are only subscribed to your class.
+</p>
 
+</div>
+<!--instructions ends here-->
+<div class="form">
+<form action="" class="">
+<!--first row starts here-->
+<div class="row row1">
+
+<div class="col-md-4">
+<lable>Faculty:</lable><br>
+<input name="faculty" style="text">
+</div>
+
+<div class="col-md-4">
+<lable>Course:</lable><br>
+<input name="faculty" style="text">
+
+</div>
+<div class="col-md-4">
+
+<lable>Course Unit:</lable><br>
+<input name="faculty" style="text">
+
+</div>
+</div>
+<br>
+<lable>Date:</lable>
+<div class="row">
+    <div class="col-md-5">
+    <lable>Date Given:</lable><br>
+<input name="faculty" class="date"style="text">
+
+
+    </div>
+    <div class="col-md-5">
+    <lable>submision Date:</lable><br>
+<input name="faculty" class="date"style="text">
+
+
+    </div>
+</div>
+<div class="row">
+<div class="col-md-7">
+<lable>Upload your assignment here*</lable><br>
+<input name="faculty" class="upload"style="text">
+
+</div>
+<div class="col-md-5">
+
+<lable>Link your Assignment</lable><br>
+<input name="faculty" class="link" style="text">
+
+
+</div>
+
+
+</div>
 
 
 
 
 </div>
-<!--instructions ends here-->
+
+
+
+
+
+<lable>Additional comments or instruction:</lable><br>
+<input name="faculty"class="addit" style="text"><br>
+<input name="Submit" type="button"value="Submit">
+
+
+
+
+
+
+</form>
+
+
+
+</div>
 
 
 </div>
