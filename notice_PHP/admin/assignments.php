@@ -26,6 +26,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -59,22 +60,35 @@ Welcome
 
 
 <div class="container">
+    <!--Assignment form starts here-->
+
+
+    <div class="assign">
+
 <!--Homework submision Header starts here-->
-<header>
 
 
+<div class="header">
+
+Create A New Assignment 
 
 
-</header>
+</div>
 
 <!--homework header ends here-->
+<!--instructions starts here-->
+<div class="instruction">
 
 
 
 
 
+</div>
+<!--instructions ends here-->
 
 
+</div>
+ <!--Assignment form ends here-->
 
 
 
