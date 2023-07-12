@@ -26,7 +26,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.css" rel="stylesheet">
-    <link rel="stylesheet" href="../admin/styles.css">
+    <link rel="stylesheet" href="../admin/style.css">
 
 </head>
 
@@ -130,13 +130,13 @@ Note: The assignment will be visisble to the students who are only subscribed to
 <div class="row">
 <div class="col-md-7">
 <lable>Upload your assignment here*</lable><br>
-<input name="faculty" class="upload"type="">
+<input name="upload" required class="upload"type="file"style="color:red">
 
 </div>
 <div class="col-md-5">
 
 <lable>Link your Assignment(optional)</lable><br>
-<input name="faculty" class="link" style="text"placeholder=" Link materials for assignment">
+<input name="link" class="link" style="text"placeholder=" Link materials for assignment">
 
 
 </div>
@@ -154,9 +154,8 @@ Note: The assignment will be visisble to the students who are only subscribed to
 
 
 <lable>Additional comments or instruction:</lable><br>
-<input name="faculty"class="addit" style="text"placeholder="Write More instructions to the students on the assignment you are giving"><br>
-<input name="Submit" class="submit"type="button"value="Submit">
-
+<input name="comment"required class="addit" style="text"placeholder="Write More instructions to the students on the assignment you are giving"><br>
+<button type="submit" id="submit" class="button" name="submit">Submit</button>
 
 
 

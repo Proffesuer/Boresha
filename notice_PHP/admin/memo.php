@@ -64,11 +64,10 @@ Welcome
 
 <h1 class=""> Event Scheduler</h1>
 
-
-
-
-
 </div>
+
+
+
 
 
 

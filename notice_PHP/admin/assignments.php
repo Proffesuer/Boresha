@@ -26,7 +26,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -91,7 +91,7 @@ Note: The assignment will be visisble to the students who are only subscribed to
 </div>
 <!--instructions ends here-->
 <div class="form">
-<form action="" class="">
+<form action="" method="post" class="">
 <!--first row starts here-->
 <div class="row row1">
 
@@ -131,13 +131,13 @@ Note: The assignment will be visisble to the students who are only subscribed to
 <div class="row">
 <div class="col-md-7">
 <lable>Upload your assignment here*</lable><br>
-<input name="faculty" class="upload"type="">
+<input name="upload" required class="upload"type="file" style="color:red"data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif">
 
 </div>
 <div class="col-md-5">
 
 <lable>Link your Assignment(optional)</lable><br>
-<input name="faculty" class="link" style="text"placeholder=" Link materials for assignment">
+<input name="link" class="link" style="link"placeholder=" Link materials for assignment">
 
 
 </div>
@@ -155,8 +155,9 @@ Note: The assignment will be visisble to the students who are only subscribed to
 
 
 <lable>Additional comments or instruction:</lable><br>
-<input name="faculty"class="addit" style="text"placeholder="Write More instructions to the students on the assignment you are giving"><br>
-<input name="Submit" class="submit"type="button"value="Submit">
+<input name="comment"class="addit" required style="text"placeholder="Write More instructions to the students on the assignment you are giving"><br>
+
+<button type="submit" id="submit" class="button" name="submit">Submit</button>
 
 
 
@@ -198,13 +199,6 @@ Note: The assignment will be visisble to the students who are only subscribed to
 <!--assignment list ends here-->
 
 <!--assignment list ends here-->
-
-
-
-
-
-
-
 
 
                    
