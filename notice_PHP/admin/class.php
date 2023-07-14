@@ -16,7 +16,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Upload|Download|Assignment</title>
+    <title>Manage class</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,6 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../admin/style.css" class="">
 
 </head>
 
@@ -35,7 +34,7 @@ session_start();
     <!-- Page Wrapper -->
     <div id="wrapper">
 <!--navigation bar-->
-<?php include "../includes/student_dash.php";?>
+<?php include "../includes/admin_dash.php";?>
 <!--navigation ends here-->
       
 
@@ -45,62 +44,25 @@ session_start();
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
-                        <a href="submit.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i>Submit Assignment</a>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
 
 
-                    
+
                     <!-- Content Row -->
 
-<hr>
+
 Welcome
-<?php echo htmlentities($_SESSION['name']);?>
-<div class="line">
+<h3><?php echo ($_SESSION['name']);?></h3>
+
 <hr>
-</div>
-<!--header starts here-->
-<div class="header">
-
-<h1>  <i class="fas fa-book fa-sm text-white-50"></i>
-         MyAssignments <br>Board</h1>
-
-
-</div>
-<!--header ends here-->
-<!--assignment board starts here-->
-<br><br>
-<div class="assignment">
-    <?php
 
 
 
 
-echo "<span class='container'>";
 
-echo "<h4>Unit Assignment</h4>";
-echo "<a style='text-decoration:none;margin-left:70%;'href='submit.php'>Submit</a>";
-echo "<span>";
-echo "<p class='para'>";
-echo   "<h6>Descriptions</h6>";
-
-echo "<h6>Date Given:</h6>";
-echo "<h6>Submission Date:</h6>";
-echo "<h6>Marks:</h6>";
-echo "<h6>Unit Code:</h6>";
-echo "<h6>Unit Name:</h6>";
-echo "<h6>Lecturer's name:</h6>";
-echo "<h6>Download Assignment:</h6>";
-
-echo "</p>";
-
-
-
-?>
-</div>
-
-<!--assignment board ends here-->
 
 
 

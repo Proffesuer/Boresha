@@ -102,15 +102,16 @@
         <span>Hostels</span></a>
 </li>
 <!-- Nav Item - Charts -->
+
 <li class="nav-item">
-    <a class="nav-link" href="user.php?page=manage-users">
+    <a class="nav-link" href="admin.php?page=manage-admin">
         <i class="fas fa-fw fa-wrench"></i>
         <span>Manage Users</span></a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="admin.php?page=manage-admin">
+    <a class="nav-link" href="class.php?page=create?classes">
         <i class="fas fa-fw fa-wrench"></i>
-        <span>Manage Admin</span></a>
+        <span>Manage Class</span></a>
 </li>
 
 

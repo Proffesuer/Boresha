@@ -16,7 +16,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Upload|Download|Assignment</title>
+    <title>Assignments</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,8 +25,8 @@ session_start();
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../admin/style.css" class="">
+    <link href="../Dash_style/css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../admin/style.css">
 
 </head>
 
@@ -45,8 +45,8 @@ session_start();
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
-                        <a href="submit.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i>Submit Assignment</a>
+                        <a href="assignments.php" class="d-none d-sm-inline-block submit" style="text-decoration:none;border-radius:5px;"><i
+                                class="fas fa-book fa-sm text-white-50"></i> Assignment List</a>
                     </div>
 
 
@@ -55,53 +55,146 @@ session_start();
                     <!-- Content Row -->
 
 <hr>
-Welcome
-<?php echo htmlentities($_SESSION['name']);?>
-<div class="line">
-<hr>
-</div>
-<!--header starts here-->
+
+  Admin ...<?php echo ($_SESSION['name']);?>
+  <div class="line">
+
+  <hr>
+  </div>
+
+
+<div class="container">
+    <!--Assignment form starts here-->
+
+
+    <div class="assign">
+
+<!--Homework submision Header starts here-->
+
+
 <div class="header">
 
 <h1>  <i class="fas fa-book fa-sm text-white-50"></i>
-         MyAssignments <br>Board</h1>
+         Assignment <br>Board</h1>
 
 
 </div>
-<!--header ends here-->
-<!--assignment board starts here-->
-<br><br>
-<div class="assignment">
-    <?php
 
+<!--homework header ends here-->
+<!--instructions starts here-->
+<div class="instruction">
+<p>Hello <?php echo ($_SESSION['name']);?> , Welcome to Assignment board on Boresha notice system.To Submit your assignment for 
+your class fill in the below form and upload the the assignment.
+Note: The assignment will not be submited when the period to submit your assignment lapses.
+</p>
 
+</div>
+<!--instructions ends here-->
+<div class="form">
+<form action="" method="post" class="">
+<!--first row starts here-->
+<div class="row row1">
 
-
-echo "<span class='container'>";
-
-echo "<h4>Unit Assignment</h4>";
-echo "<a style='text-decoration:none;margin-left:70%;'href='submit.php'>Submit</a>";
-echo "<span>";
-echo "<p class='para'>";
-echo   "<h6>Descriptions</h6>";
-
-echo "<h6>Date Given:</h6>";
-echo "<h6>Submission Date:</h6>";
-echo "<h6>Marks:</h6>";
-echo "<h6>Unit Code:</h6>";
-echo "<h6>Unit Name:</h6>";
-echo "<h6>Lecturer's name:</h6>";
-echo "<h6>Download Assignment:</h6>";
-
-echo "</p>";
-
-
-
-?>
+<div class="col-md-4">
+<lable>Faculty:</lable><br>
+<input name="faculty" style="text">
 </div>
 
-<!--assignment board ends here-->
+<div class="col-md-4">
+<lable>Course:</lable><br>
+<input name="faculty" style="text">
 
+</div>
+<div class="col-md-4">
+
+<lable>Course Unit:</lable><br>
+<input name="faculty" style="text">
+
+</div>
+</div>
+
+<br>
+
+<div class="row">
+ 
+    <div class="col-md-4">
+<input name="subdate" class="date"type="date" hidden>
+    </div>
+   
+
+
+</div>
+<div class="row">
+<div class="col-md-7">
+<lable>Upload your assignment here*</lable><br>
+<input name="upload" required class="upload"type="file" style="color:red"data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif">
+
+</div>
+<div class="col-md-5">
+
+<lable>Link your Assignment(optional)</lable><br>
+<input name="link" class="link" style="link"placeholder=" Link materials for assignment">
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<lable>Additional comments or instruction:</lable><br>
+<input name="comment"class="addit" required style="text"placeholder="Write More instructions to the students on the assignment you are giving"><br>
+
+<button type="submit" id="submit" class="button" name="submit">Submit</button>
+
+
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+ <!--Assignment form ends here-->
+
+
+
+
+</div>
+<div class="line">
+    <hr>
+</div>
+
+<!--assignment list starts here-->
+
+<!--assignment list starts here-->
+<div class="container">
+<div class="lists">
+    <h4 class="head">My Assignments:</h4>
+<hr>
+
+
+
+</div>
+</div>
+
+
+<!--assignment list ends here-->
+
+<!--assignment list ends here-->
 
 
                    

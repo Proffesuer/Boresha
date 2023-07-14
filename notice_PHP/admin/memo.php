@@ -26,7 +26,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="../css/event.css">
 </head>
 
 <body id="page-top">
@@ -45,7 +45,7 @@ session_start();
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                                class="fas fa-download fa-sm text-white-50"></i> Create a Memo</a>
                     </div>
 
 
@@ -54,17 +54,48 @@ session_start();
                     <!-- Content Row -->
 
 
-
+<div style="font-weight:bolder;">
 Welcome
 <?php echo htmlentities($_SESSION['name']);?>
-
+</div>
 <!--Internal memo starts here-->
 
 <div class="memo">
 
 <h1 class=""> Event Scheduler</h1>
 
+
+
+
+
 </div>
+<?php
+echo "<div class='container'>";
+
+echo "<hr>";
+echo "<div class='head'>";
+echo "<head>Post title</head>";
+echo "</div>";
+
+echo "<div class='row'>";
+
+echo "<div class='col-md-6'>";
+echo "<div>This is the picture</div>";
+echo "</div>";
+
+echo "<div class='col-md-6'>";
+echo "<div>This is the message</div>";
+echo "</div>";
+
+
+echo "</div>";
+
+
+
+
+
+echo "</div>";
+?>
 
 
 

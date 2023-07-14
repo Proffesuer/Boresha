@@ -112,21 +112,28 @@ Note: The assignment will be visisble to the students who are only subscribed to
 
 </div>
 </div>
+
+<lable>Marks:</lable><br>
+<input name="marks" style="text" required placeholder="Enter the marks">
+
 <br>
 <lable>Date:</lable>
 <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-4">
     <lable>Date Given:</lable><br>
 <input name="faculty" class="date"type="date">
-
-
     </div>
-    <div class="col-md-5">
+
+    <div class="col-md-4">
     <lable>submision Date:</lable><br>
 <input name="subdate" class="date"type="date">
-
-
     </div>
+    <div class="col-md-4">
+    <lable>Submission Time:</lable><br>
+<input name="subdate" class="Time"type="time">
+    </div>
+
+
 </div>
 <div class="row">
 <div class="col-md-7">

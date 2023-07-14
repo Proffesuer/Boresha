@@ -118,3 +118,11 @@ h5{
    font-size: larger;
    font-weight: bolder;
 }
+.para{
+    color: #fff;
+}
+h6{
+    margin-left: 30px;
+    font-weight: bolder;
+    color: #053742;
+}
