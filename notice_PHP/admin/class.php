@@ -1,9 +1,131 @@
-
 <?php
-include "../Database/config.php";
+ include "../Database/config.php";
 
-session_start();
+ session_start();
+ $fac_name = "";
+ $fac_description = "";
+
+ $errors = array(); 
+
+// REGISTER USER
+if (isset($_POST['submit_faculty'])) {
+    // receive all input values from the form
+    $fac_name = $_POST['fac_name'];
+    $fac_description = $_POST['fac_description'];
+
+    $user_check_query = "SELECT * FROM faculty WHERE fac_name='$fac_name' LIMIT 1";
+  $result = mysqli_query($con, $user_check_query);
+  $user = mysqli_fetch_assoc($result);
+  
+  if ($user) { // if user exists
+    if ($user['fac_name'] === $fac_name) {
+      array_push($errors, "Faculty already exists");
+    }
+  }
+  if (count($errors) == 0) {
+        $query = "INSERT INTO faculty (fac_name, fac_description) 
+                  VALUES('$fac_name', '$fac_description')";
+       if(!mysqli_query($con, $query)){
+
+        echo 'not inserted';
+       }
+       else{
+	 echo '<script type="text/javascript">
+     alert("New Faculty Added!");
+        location="class.php";
+          </script>';
+       }
+    }
+      
+  }
+  
+
+
+ 
+
 ?>
+
+
+
+
+<?php  if (count($errors) > 0) : ?>
+	<div class="error">
+		<?php foreach ($errors as $error) : ?>
+		  <p><?php echo '<script>
+                alert("The Faculty Already Exist Try another one!"); 
+
+          </script>';?></p>
+		<?php endforeach ?>
+	</div>
+  <?php  endif ?>
+  <!--Insertion code for the faculty information ends here-->
+
+  <!--Insertion code for the lecture Hall starts here-->
+
+
+  <?php
+$fac_name = "";
+$fac_description = "";
+
+$errors = array(); 
+
+// REGISTER USER
+if (isset($_POST['submit_faculty'])) {
+   // receive all input values from the form
+   $fac_name = $_POST['fac_name'];
+   $fac_description = $_POST['fac_description'];
+
+   $user_check_query = "SELECT * FROM faculty WHERE fac_name='$fac_name' LIMIT 1";
+ $result = mysqli_query($con, $user_check_query);
+ $user = mysqli_fetch_assoc($result);
+ 
+ if ($user) { // if user exists
+   if ($user['fac_name'] === $fac_name) {
+     array_push($errors, "Faculty already exists");
+   }
+ }
+ if (count($errors) == 0) {
+       $query = "INSERT INTO faculty (fac_name, fac_description) 
+                 VALUES('$fac_name', '$fac_description')";
+      if(!mysqli_query($con, $query)){
+
+       echo 'not inserted';
+      }
+      else{
+    echo '<script type="text/javascript">
+    alert("New Faculty Added!");
+       location="class.php";
+         </script>';
+      }
+   }
+     
+ }
+ 
+
+
+
+?>
+
+
+
+
+  <?php  if (count($errorsh) > 0) : ?>
+	<div class="error">
+		<?php foreach ($errorshl as $error) : ?>
+		  <p><?php echo '<script>
+                alert("The Faculty Already Exist Try another one!"); 
+
+          </script>';?></p>
+		<?php endforeach ?>
+	</div>
+  <?php  endif ?>
+
+
+<!--Insertion code for the lecture Hall ends here-->
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +138,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Manage class</title>
+    <title>Manage classes</title>
 
     <!-- Custom fonts for this template-->
     <link href="../Dash_style/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -26,6 +148,7 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="../Dash_style/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/class.css">
 
 </head>
 
@@ -43,7 +166,7 @@ session_start();
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Boresha Notice</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Manage Classes</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
@@ -56,8 +179,65 @@ session_start();
 
 Welcome
 <h3><?php echo ($_SESSION['name']);?></h3>
-
+<div style="background-color:tomato;">
 <hr>
+</div>
+<!--managing class container starts here-->
+<div class="container style">
+    <hr>
+    
+<!--first row starts here -->
+<h5>Here you will Assign Fuculty</h5><br>
+<div class="row">
+  
+    <br>     
+
+    <form action="" method="post">
+<label for="">Faculty Name</label><br>
+<input type="text" name="fac_name" value="<?php echo $fac_name;?>" required><br>
+<label for="">Faculty Description</label><br>
+
+<input type="text" name="fac_description" value="<?php echo $fac_description;?>"><br><br>
+<button id="submit" name="submit_faculty" class="btn btn-primary">Add Faculty</button>
+
+    </form>
+
+
+</div>
+<hr>
+<h5>Here you will Assign Lecture Hall:</h5>
+<!--Second row starts here -->
+<div class="row">
+
+<form action="" method="post">
+<label for="">Hall Name:</label><br>
+<input type="text" name="hall" value="<?php echo $hall;?>" required><br>
+<label for="">Building:</label><br>
+<label for=""></label>
+<input type="text" name="building" value="<?php echo $building;?>"><br><br>
+<button id="submit" name="submit_hall" class="btn btn-primary">Add Hall</button>
+
+    </form>
+
+
+
+
+</div>
+<hr>
+<!--third row starts here -->
+<div class="row">
+<h5>Here you will Assign Lecture Hall</h5>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<!--managing class content ends here-->
 
 
 
@@ -66,8 +246,12 @@ Welcome
 
 
 
+
+
+
+</div>
                    
-            <!-- End of Main Content -->
+    <!-- End of Main Content -->
 
            <!-- Footer starts here-->
             <?php include "../includes/footer.php"?>
