@@ -4,10 +4,11 @@
  session_start();
  $fac_name = "";
  $fac_description = "";
-
+ $hall = "";
+ $building = "";
  $errors = array(); 
-
-// REGISTER USER
+ $errorsh = array(); 
+// Registration for the new faculty starts here
 if (isset($_POST['submit_faculty'])) {
     // receive all input values from the form
     $fac_name = $_POST['fac_name'];
@@ -38,10 +39,9 @@ if (isset($_POST['submit_faculty'])) {
     }
       
   }
-  
 
 
- 
+
 
 ?>
 
@@ -58,72 +58,12 @@ if (isset($_POST['submit_faculty'])) {
 		<?php endforeach ?>
 	</div>
   <?php  endif ?>
+
+
+ 
   <!--Insertion code for the faculty information ends here-->
 
   <!--Insertion code for the lecture Hall starts here-->
-
-
-  <?php
-$fac_name = "";
-$fac_description = "";
-
-$errors = array(); 
-
-// REGISTER USER
-if (isset($_POST['submit_faculty'])) {
-   // receive all input values from the form
-   $fac_name = $_POST['fac_name'];
-   $fac_description = $_POST['fac_description'];
-
-   $user_check_query = "SELECT * FROM faculty WHERE fac_name='$fac_name' LIMIT 1";
- $result = mysqli_query($con, $user_check_query);
- $user = mysqli_fetch_assoc($result);
- 
- if ($user) { // if user exists
-   if ($user['fac_name'] === $fac_name) {
-     array_push($errors, "Faculty already exists");
-   }
- }
- if (count($errors) == 0) {
-       $query = "INSERT INTO faculty (fac_name, fac_description) 
-                 VALUES('$fac_name', '$fac_description')";
-      if(!mysqli_query($con, $query)){
-
-       echo 'not inserted';
-      }
-      else{
-    echo '<script type="text/javascript">
-    alert("New Faculty Added!");
-       location="class.php";
-         </script>';
-      }
-   }
-     
- }
- 
-
-
-
-?>
-
-
-
-
-  <?php  if (count($errorsh) > 0) : ?>
-	<div class="error">
-		<?php foreach ($errorshl as $error) : ?>
-		  <p><?php echo '<script>
-                alert("The Faculty Already Exist Try another one!"); 
-
-          </script>';?></p>
-		<?php endforeach ?>
-	</div>
-  <?php  endif ?>
-
-
-<!--Insertion code for the lecture Hall ends here-->
-
-
 
 
 
@@ -207,6 +147,8 @@ Welcome
 <hr>
 <h5>Here you will Assign Lecture Hall:</h5>
 <!--Second row starts here -->
+<?php print_r($_POST);?>
+<?php print_r($_SESSION);?>
 <div class="row">
 
 <form action="" method="post">
